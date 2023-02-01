@@ -128,7 +128,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Login.aspx" />
+    <Content Include="TelaCadastroUser\CadastroUser.aspx" />
+    <Content Include="TelaCadastroVaga\CadastroVaga.aspx" />
+    <Content Include="TelaLogin\Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -199,11 +201,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="TelaCadastroUser\CadastroUser.aspx.cs">
+      <DependentUpon>CadastroUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaCadastroUser\CadastroUser.aspx.designer.cs">
+      <DependentUpon>CadastroUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelaCadastroVaga\CadastroVaga.aspx.cs">
+      <DependentUpon>CadastroVaga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaCadastroVaga\CadastroVaga.aspx.designer.cs">
+      <DependentUpon>CadastroVaga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelaLogin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="TelaLogin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

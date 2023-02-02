@@ -1,0 +1,25 @@
+CREATE DATABASE BancoTalentos;
+USE BancoTalentos;
+CREATE TABLE gerente(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	user varchar(15),
+    senha varchar(15)
+);
+CREATE TABLE usuario(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome varchar(200),
+    formacao varchar(200),
+    cpf varchar(11),
+    rg varchar(11),
+    email varchar(50),
+    telefone varchar(15),
+    celular varchar(15)
+);
+CREATE TABLE vagasdisponiveis(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    vaga varchar(50),
+    salario float,
+    cargah datetime,
+    requisito varchar(200),
+    empresa varchar(50)
+);

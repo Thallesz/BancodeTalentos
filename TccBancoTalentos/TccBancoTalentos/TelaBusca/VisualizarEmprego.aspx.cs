@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Serilog;
 
 namespace TccBancoTalentos
 {
@@ -21,11 +22,24 @@ namespace TccBancoTalentos
         protected void btnBuscaEM_Click(object sender, EventArgs e)
         {
             DataTable empregos = new DataTable();
-            empregos.Columns.Add("vaga");
-            empregos.Columns.Add("salario");
-            empregos.Columns.Add("cargah");
-            empregos.Columns.Add("requisitos");
-            empregos.Columns.Add("empresa");
+            try
+            {
+                Log.Information("Adicionando Colunas");             
+                empregos.Columns.Add("vaga");
+                empregos.Columns.Add("salario");
+                empregos.Columns.Add("cargah");
+                empregos.Columns.Add("requisitos");
+                empregos.Columns.Add("empresa");
+                Log.Information("Colunas Adicionadas");
+            }
+            catch(Exception j)
+            {
+                Log.Error("Informações Não encontradas!" + j.Message);
+            }
+            finally
+            {
+                Log.Warning("Fim");
+            }
 
             connection.Open();
 

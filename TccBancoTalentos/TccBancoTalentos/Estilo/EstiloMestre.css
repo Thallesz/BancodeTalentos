@@ -1,3 +1,55 @@
 ﻿body {
     background-image: url('/Estilo/img/Background.png')
 }
+
+.button {
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, rgb(204, 108, 207), rgba(76, 8, 94, 0.301));
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    color: #fff;
+    background-color: #0015ff;
+    border: none;
+    border-radius: 15px;
+}
+
+    .button:hover {
+        background-color: rgb(15, 26, 155)
+    }
+
+    .button:active {
+        background-color: #0015ff;
+        box-shadow: 0 5px 5px rgb(56, 55, 55);
+        transform: translateY(4px);
+    }
+
+.box-title {
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0,0.5);
+    margin-top: 90px;
+    margin-left: 250px;
+    margin-right: 250px;    
+    box-shadow: 10px 10px 20px #030303;
+    border-radius: 20px;
+}
+
+.container-principal {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 10fr 1fr;
+}

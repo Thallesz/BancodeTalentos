@@ -40,7 +40,6 @@
 }
 
 .content-box {
-    background-color: rgba(0, 0, 0,0.5);
     margin-top: 90px;
     margin-left: 250px;
     margin-right: 250px;    
@@ -51,5 +50,4 @@
 .container-principal {
     display: grid;
     height: 100vh;
-    grid-template-rows: 1fr 10fr 1fr;
 }

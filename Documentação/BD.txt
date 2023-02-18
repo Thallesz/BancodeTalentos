@@ -12,7 +12,7 @@ CREATE TABLE usuario(
     cpf varchar(11),
     rg varchar(11),
     email varchar(50),
-    telefone varchar(15),
+    endereco varchar(200),
     celular varchar(15)
 );
 CREATE TABLE vagasdisponiveis(

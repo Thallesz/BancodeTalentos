@@ -19,6 +19,8 @@ namespace TccBancoTalentos
             connection = new MySqlConnection(SiteMaster.ConnectionString);
         }
 
+
+
         protected void btnBuscaEM_Click(object sender, EventArgs e)
         {
             DataTable empregos = new DataTable();

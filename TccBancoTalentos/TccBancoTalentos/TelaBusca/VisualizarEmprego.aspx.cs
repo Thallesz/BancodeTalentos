@@ -26,7 +26,8 @@ namespace TccBancoTalentos
             DataTable empregos = new DataTable();
             try
             {
-                Log.Information("Adicionando Colunas");             
+                Log.Information("Adicionando Colunas");
+                empregos.Columns.Add("id");
                 empregos.Columns.Add("vaga");
                 empregos.Columns.Add("salario");
                 empregos.Columns.Add("cargah");
@@ -45,12 +46,13 @@ namespace TccBancoTalentos
 
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,requisito,empresa from vagasdisponiveis", connection);
+            var comando = new MySqlCommand($"SELECT id,vaga,salario,cargah,requisito,empresa from vagasdisponiveis", connection);
 
             var reader = comando.ExecuteReader();
             while (reader.Read())
             {
                 var linha = empregos.NewRow();
+                linha["id"] = reader.GetInt32("id");
                 linha["vaga"] = reader.GetString("vaga");
                 linha["salario"] = reader.GetFloat("salario");
                 linha["cargah"] = reader.GetTimeSpan("cargah");
@@ -61,6 +63,7 @@ namespace TccBancoTalentos
             }
 
             connection.Close();
+            Session["tabela"] = empregos;
             grdEmpregos.DataSource = empregos;
             grdEmpregos.DataBind();
 
@@ -68,7 +71,12 @@ namespace TccBancoTalentos
 
         protected void grdEmpregos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-
+            int index = Convert.ToInt32(e.CommandArgument);
+            var emprego = (DataTable)Session["tabela"];
+            if(e.CommandName == "candidatar")
+            {
+                Response.Redirect("~/TelaCadastro/CadastroUser.aspx");
+            }
         }
     }
 }

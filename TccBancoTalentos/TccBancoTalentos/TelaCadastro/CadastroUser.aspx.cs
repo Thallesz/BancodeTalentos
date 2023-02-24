@@ -150,7 +150,7 @@ namespace TccBancoTalentos.TelaCadastroUser
                     comando.Parameters.Add(new MySqlParameter("email", txtEmail.Text));
                     comando.Parameters.Add(new MySqlParameter("celular", txtCelular.Text));
                     comando.Parameters.Add(new MySqlParameter("endereco", endereco));
-                    comando.ExecuteNonQuery();
+                    comando.ExecuteNonQuery();  
                     connection.Close();
 
                     SiteMaster.ExibirAlert(this, "Usuário cadastrado com sucesso!");

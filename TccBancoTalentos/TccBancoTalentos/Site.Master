@@ -4,7 +4,7 @@
 
 <html lang="en">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Banco de Talentos</title>
@@ -13,11 +13,11 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body style="background-image:url('../Estilo/img/telafundo.png'); background-repeat: no-repeat;">
+<body style="background-image: url('../Estilo/img/telafundo.png'); background-repeat: no-repeat;">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -38,11 +38,30 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-        
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">    
+                        <li><a runat="server" style="color: aliceblue; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarEmprego.aspx">Empregos Disponíveis</a></li>                        
+                        <li><a runat="server" style="color: aliceblue; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaCadastro/CadastroVaga.aspx">Inserir Vaga</a></li>
+                        <li><a runat="server" style="color: aliceblue; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px; margin-left:650px" href="TelaLogin/Login.aspx">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-                       
+
         </div>
 
     </form>

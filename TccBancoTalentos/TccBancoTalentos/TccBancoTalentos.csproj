@@ -154,6 +154,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="TelaBusca\VisualizarUsuários.aspx" />
     <Content Include="TelaCadastro\CadastroUser.aspx" />
     <Content Include="TelaCadastro\CadastroVaga.aspx" />
     <Content Include="TelaLogin\Login.aspx" />
@@ -229,6 +230,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Modelos\Empregos.cs" />
+    <Compile Include="TelaBusca\VisualizarUsuários.aspx.cs">
+      <DependentUpon>VisualizarUsuários.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaBusca\VisualizarUsuários.aspx.designer.cs">
+      <DependentUpon>VisualizarUsuários.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TelaCadastro\CadastroUser.aspx.cs">
       <DependentUpon>CadastroUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

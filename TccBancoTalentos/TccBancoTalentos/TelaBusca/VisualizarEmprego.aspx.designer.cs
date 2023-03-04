@@ -13,15 +13,6 @@ namespace TccBancoTalentos {
     public partial class VisualizarEmprego {
         
         /// <summary>
-        /// Controle btnBuscaEM.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscaEM;
-        
-        /// <summary>
         /// Controle grdEmpregos.
         /// </summary>
         /// <remarks>

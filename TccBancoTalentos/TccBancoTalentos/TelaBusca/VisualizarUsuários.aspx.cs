@@ -16,16 +16,7 @@ namespace TccBancoTalentos.TelaBusca
         protected void Page_Load(object sender, EventArgs e)
         {
             connection = new MySqlConnection(SiteMaster.ConnectionString);
-        }
 
-        protected void grdUsuarios_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-           
-
-        }
-
-        protected void btnBuscaUsuarios_Click(object sender, EventArgs e)
-        {
             DataTable usuarios = new DataTable();
             usuarios.Columns.Add("id");
             usuarios.Columns.Add("nome");
@@ -60,5 +51,12 @@ namespace TccBancoTalentos.TelaBusca
             grdUsuarios.DataSource = usuarios;
             grdUsuarios.DataBind();
         }
+
+        protected void grdUsuarios_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+           
+
+        }
+
     }
 }

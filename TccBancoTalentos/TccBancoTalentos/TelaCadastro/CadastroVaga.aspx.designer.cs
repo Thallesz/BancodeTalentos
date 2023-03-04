@@ -49,15 +49,6 @@ namespace TccBancoTalentos.TelaCadastroVaga {
         protected global::System.Web.UI.WebControls.Button btnRegistar;
         
         /// <summary>
-        /// Controle txtRequisito.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRequisito;
-        
-        /// <summary>
         /// Controle txtEmpresa.
         /// </summary>
         /// <remarks>
@@ -65,5 +56,14 @@ namespace TccBancoTalentos.TelaCadastroVaga {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmpresa;
+        
+        /// <summary>
+        /// Controle txtCidade.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCidade;
     }
 }

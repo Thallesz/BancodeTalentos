@@ -4,39 +4,38 @@
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
 
     <div class="container-principal">
-        <h2 class="box-title">Cadastro de Usuários</h2>
         <div class="row">
-            <div style="border: solid; border-color: black; padding: 60px; margin-top: 50px; border-radius: 50px">
+            <div style="border: solid; border-color: black; padding: 60px; margin-top: 50px; border-radius: 50px; box-shadow: 10px 10px 20px #030303">
                 <div class="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-3">
-                        <h2 style="font-size: 25px; color: white">Nome:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtNomeUser" Style="text-align: center; border-radius: 50px"></asp:TextBox>
-                        <h2 style="font-size: 25px; color: white">CPF:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtCPFUser" Style="text-align: center; border-radius: 50px"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Nome:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtNomeUser" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">CPF:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtCPFUser" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
                         <asp:Label runat="server" ID="lblAlertaCpf"></asp:Label>
-                        <h2 style="font-size: 25px; color: white">RG:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtRGUser" Style="text-align: center; border-radius: 50px"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">RG:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtRGUser" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
                         <asp:Label runat="server" ID="lblAlertaRG"></asp:Label>
-                        <h2 style="font-size: 25px; color: white">Celular:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtCelular" Style="text-align: center; border-radius: 50px"></asp:TextBox>
-                        <h2 style="font-size: 25px; color: white">Formação:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtFormacao" Style="text-align: center; border-radius: 50px"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Celular:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtCelular" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Formação:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtFormacao" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
                     </div>
                     <div class="col-sm-2">
                         <asp:Button runat="server" ID="btnCadUser" OnClick="btnCadUser_Click" CssClass="button" Text="Cadastrar" Style="margin-top: 500px" />
                     </div>
                     <div class="col-sm-4">
-                        <h2 style="font-size: 25px; color: white">Email:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail" Style="text-align: center; border-radius: 50px"></asp:TextBox>
-                        <h2 style="font-size: 25px; color: white">Cidade:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtCidade" Style="text-align: center; border-radius: 50px"></asp:TextBox>
-                        <h2 style="font-size: 25px; color: white">Rua:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="TxtRua" Style="text-align: center; border-radius: 50px"></asp:TextBox>
-                        <h2 style="font-size: 25px; color: white">Bairro:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="TxtBairro" Style="text-align: center; border-radius: 50px"></asp:TextBox>
-                        <h2 style="font-size: 25px; color: white">Número:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="TxtNumero" Style="text-align: center; border-radius: 50px"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Email:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Cidade:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtCidade" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Rua:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="TxtRua" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Bairro:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="TxtBairro" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Número:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="TxtNumero" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
                     </div>
                     <div class="col-sm-1"></div>
                 </div>

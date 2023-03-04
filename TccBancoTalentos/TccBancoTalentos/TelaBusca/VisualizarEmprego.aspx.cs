@@ -17,25 +17,19 @@ namespace TccBancoTalentos
         protected void Page_Load(object sender, EventArgs e)
         {
             connection = new MySqlConnection(SiteMaster.ConnectionString);
-        }
 
-
-
-        protected void btnBuscaEM_Click(object sender, EventArgs e)
-        {
             DataTable empregos = new DataTable();
             try
             {
                 Log.Information("Adicionando Colunas");
-                empregos.Columns.Add("id");
                 empregos.Columns.Add("vaga");
                 empregos.Columns.Add("salario");
                 empregos.Columns.Add("cargah");
-                empregos.Columns.Add("requisitos");
                 empregos.Columns.Add("empresa");
+                empregos.Columns.Add("cidade");
                 Log.Information("Colunas Adicionadas");
             }
-            catch(Exception j)
+            catch (Exception j)
             {
                 Log.Error("Informações Não encontradas!" + j.Message);
             }
@@ -46,18 +40,17 @@ namespace TccBancoTalentos
 
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT id,vaga,salario,cargah,requisito,empresa from vagasdisponiveis", connection);
+            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,empresa,cidade from vagasdisponiveis", connection);
 
             var reader = comando.ExecuteReader();
             while (reader.Read())
             {
                 var linha = empregos.NewRow();
-                linha["id"] = reader.GetInt32("id");
                 linha["vaga"] = reader.GetString("vaga");
                 linha["salario"] = reader.GetFloat("salario");
                 linha["cargah"] = reader.GetTimeSpan("cargah");
-                linha["requisitos"] = reader.GetString("requisito");
                 linha["empresa"] = reader.GetString("empresa");
+                linha["cidade"] = reader.GetString("cidade");
                 empregos.Rows.Add(linha);
 
             }
@@ -66,14 +59,13 @@ namespace TccBancoTalentos
             Session["tabela"] = empregos;
             grdEmpregos.DataSource = empregos;
             grdEmpregos.DataBind();
-
-            }
+        }
 
         protected void grdEmpregos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             int index = Convert.ToInt32(e.CommandArgument);
             var emprego = (DataTable)Session["tabela"];
-            if(e.CommandName == "candidatar")
+            if (e.CommandName == "candidatar")
             {
                 Response.Redirect("~/TelaCadastro/CadastroUser.aspx");
             }

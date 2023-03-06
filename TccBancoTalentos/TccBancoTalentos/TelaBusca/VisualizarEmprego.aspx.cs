@@ -18,6 +18,25 @@ namespace TccBancoTalentos
         {
             connection = new MySqlConnection(SiteMaster.ConnectionString);
 
+            if(!IsPostBack)
+            {
+                connection.Open();
+
+                droplistCidade.Items.Clear();
+
+                var reader1 = new MySqlCommand("SELECT distinct cidade from vagasdisponiveis", connection).ExecuteReader();
+
+                droplistCidade.Items.Add("");
+
+                while (reader1.Read())
+                {
+                    var cidade = new ListItem(reader1.GetString("cidade"));
+                    droplistCidade.Items.Add(cidade);
+                }
+
+                connection.Close();
+            }
+
             DataTable empregos = new DataTable();
             try
             {
@@ -27,6 +46,7 @@ namespace TccBancoTalentos
                 empregos.Columns.Add("cargah");
                 empregos.Columns.Add("empresa");
                 empregos.Columns.Add("cidade");
+                empregos.Columns.Add("bairro");
                 Log.Information("Colunas Adicionadas");
             }
             catch (Exception j)
@@ -40,7 +60,12 @@ namespace TccBancoTalentos
 
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,empresa,cidade from vagasdisponiveis", connection);
+            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,empresa,cidade,bairro from vagasdisponiveis", connection);
+
+            if (droplistCidade.SelectedIndex > 0)
+            {
+                comando.CommandText += $" AND cidade like '{droplistCidade.SelectedItem.Text}'";
+            }
 
             var reader = comando.ExecuteReader();
             while (reader.Read())
@@ -51,14 +76,15 @@ namespace TccBancoTalentos
                 linha["cargah"] = reader.GetTimeSpan("cargah");
                 linha["empresa"] = reader.GetString("empresa");
                 linha["cidade"] = reader.GetString("cidade");
+                linha["bairro"] = reader.GetString("bairro");
                 empregos.Rows.Add(linha);
 
             }
-
-            connection.Close();
+           
             Session["tabela"] = empregos;
             grdEmpregos.DataSource = empregos;
             grdEmpregos.DataBind();
+            connection.Close();
         }
 
         protected void grdEmpregos_RowCommand(object sender, GridViewCommandEventArgs e)

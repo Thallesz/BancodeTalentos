@@ -7,7 +7,7 @@
     <div style="padding-top: 100px"></div>
     <div class="container-principal">
         <div class="row">
-            <div style="border: solid; border-color: black; padding: 30px; border-radius: 20px; box-shadow: 10px 10px 20px #030303;">
+            <div style="border:none; border-color: black; padding: 30px; border-radius: 20px; box-shadow: 10px 10px 20px #030303;">
                     <asp:GridView runat="server" ID="grdUsuarios" OnRowCommand="grdUsuarios_RowCommand" AutoGenerateColumns="false" Width="100%" AllowPaging="true" PageSize="20" CssClass="gridview-exemplo" Style="color: white">
                         <Columns>
                             <asp:BoundField DataField="id" HeaderText="ID" />

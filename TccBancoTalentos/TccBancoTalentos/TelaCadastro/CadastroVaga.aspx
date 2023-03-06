@@ -5,7 +5,7 @@
     <div class="container-principal"> 
         <div style="padding-top:30px"></div>
         <div class="row">
-            <div style="border: solid; border-color: black; padding: 30px; border-radius: 20px; box-shadow: 10px 10px 20px #030303">
+            <div style="border: none; border-color: black; padding: 30px; border-radius: 20px; box-shadow: 10px 10px 20px #030303">
                 <div class="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-3">
@@ -24,6 +24,8 @@
                         <asp:TextBox runat="server" CssClass="form-control" ID="txtEmpresa" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
                         <h2 style="font-size: 25px; color: black">Cidade:</h2>
                         <asp:TextBox runat="server" CssClass="form-control" ID="txtCidade" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
+                        <h2 style="font-size: 25px; color: black">Bairro:</h2>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="txtBairro" Style="text-align: center; border-radius: 10px; border-color:black"></asp:TextBox>
                     </div>
                 </div>
             </div>

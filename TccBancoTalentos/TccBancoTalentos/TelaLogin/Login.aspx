@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-            <div style="border: solid; border-color: black; padding: 60px; margin-top: 140px; border-radius: 50px; box-shadow: 10px 10px 20px #030303">
+            <div style="border: none; border-color: black; padding: 60px; margin-top: 140px; border-radius: 50px; box-shadow: 10px 10px 20px #030303">
                 <h2 style="font-size: 25px; font-family: 'Franklin Gothic Book'; color: black">Usuário:</h2>
                 <asp:TextBox runat="server" CssClass="form-control" ID="txtUser" Style="border-color:black;text-align: center; border-radius: 10px"></asp:TextBox>
                 <br />

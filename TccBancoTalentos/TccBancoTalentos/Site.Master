@@ -39,7 +39,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-fixed-top navbar-light bg-light">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,10 +50,10 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">    
-                        <li><a runat="server" style="color: aliceblue; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarEmprego.aspx">Empregos Disponíveis</a></li>                        
-                        <li><a runat="server" style="color: aliceblue; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaCadastro/CadastroVaga.aspx">Inserir Vaga</a></li>
-                        <li><a runat="server" style="color: aliceblue; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarUsuários.aspx">Usuários</a></li>
-                        <li><a runat="server" style="color: aliceblue; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px; margin-left:650px" href="TelaLogin/Login.aspx">Login</a></li>
+                        <li><a runat="server" style="color: black; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarEmprego.aspx">Empregos Disponíveis</a></li>                        
+                        <li><a runat="server" style="color: black; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaCadastro/CadastroVaga.aspx">Inserir Vaga</a></li>
+                        <li><a runat="server" style="color: black; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarUsuários.aspx">Usuários</a></li>
+                        <li><a runat="server" style="color: black; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px; margin-left:650px" href="TelaLogin/Login.aspx">Login</a></li>
                         
                     </ul>
                 </div>

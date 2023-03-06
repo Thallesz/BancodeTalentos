@@ -16,7 +16,18 @@ namespace TccBancoTalentos
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            
+            var user = new Negocio.Usuario().Verifica_Usuario(txtUser.Text, txtSenha.Text);
+
+            if (user !=null)
+            {
+                Session["user"] = user;
+                Response.Redirect("../TelaBusca/VisualizarUsuários.aspx");
+            }
+            else
+            {
+                SiteMaster.ExibirAlert(this, "Usuário e/ou senha incorretos!");
+            }
+                
         }
     }
 }

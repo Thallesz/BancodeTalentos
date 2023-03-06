@@ -7,11 +7,22 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace TccBancoTalentos {
-    
-    
-    public partial class VisualizarEmprego {
-        
+namespace TccBancoTalentos
+{
+
+
+    public partial class VisualizarEmprego
+    {
+
+        /// <summary>
+        /// Controle droplistCidade.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList droplistCidade;
+
         /// <summary>
         /// Controle grdEmpregos.
         /// </summary>

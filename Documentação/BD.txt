@@ -21,5 +21,8 @@ CREATE TABLE vagasdisponiveis(
     salario float,
     cargah time,
     empresa varchar(50),
-    cidade varchar(100)
+    cidade varchar(100),
+    bairro varchar(100)
 );
+
+INSERT INTO gerente (user, senha) VALUES ('admin', 'admin');

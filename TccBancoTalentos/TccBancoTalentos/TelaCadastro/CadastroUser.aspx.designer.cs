@@ -7,11 +7,13 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace TccBancoTalentos.TelaCadastroUser {
-    
-    
-    public partial class CadastroUser {
-        
+namespace TccBancoTalentos.TelaCadastroUser
+{
+
+
+    public partial class CadastroUser
+    {
+
         /// <summary>
         /// Controle txtNomeUser.
         /// </summary>
@@ -20,52 +22,7 @@ namespace TccBancoTalentos.TelaCadastroUser {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNomeUser;
-        
-        /// <summary>
-        /// Controle txtCPFUser.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCPFUser;
-        
-        /// <summary>
-        /// Controle lblAlertaCpf.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAlertaCpf;
-        
-        /// <summary>
-        /// Controle txtRGUser.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRGUser;
-        
-        /// <summary>
-        /// Controle lblAlertaRG.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAlertaRG;
-        
-        /// <summary>
-        /// Controle txtCelular.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCelular;
-        
+
         /// <summary>
         /// Controle txtEmail.
         /// </summary>
@@ -74,16 +31,43 @@ namespace TccBancoTalentos.TelaCadastroUser {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
+
         /// <summary>
-        /// Controle btnCadUser.
+        /// Controle txtCPFUser.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadUser;
-        
+        protected global::System.Web.UI.WebControls.TextBox txtCPFUser;
+
+        /// <summary>
+        /// Controle lblAlertaCpf.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAlertaCpf;
+
+        /// <summary>
+        /// Controle txtSenha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSenha;
+
+        /// <summary>
+        /// Controle txtCelular.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCelular;
+
         /// <summary>
         /// Controle txtCidade.
         /// </summary>
@@ -92,32 +76,23 @@ namespace TccBancoTalentos.TelaCadastroUser {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCidade;
-        
+
         /// <summary>
-        /// Controle TxtRua.
+        /// Controle txtEstado.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtRua;
-        
+        protected global::System.Web.UI.WebControls.TextBox txtEstado;
+
         /// <summary>
-        /// Controle TxtBairro.
+        /// Controle btnCadUser.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBairro;
-        
-        /// <summary>
-        /// Controle TxtNumero.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumero;
+        protected global::System.Web.UI.WebControls.Button btnCadUser;
     }
 }

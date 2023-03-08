@@ -31,7 +31,7 @@ namespace TccBancoTalentos.TelaCadastroVaga
             comando.Parameters.Add(new MySqlParameter("cargah", txtCargaH.Text));
             comando.Parameters.Add(new MySqlParameter("empresa", txtEmpresa.Text));
             comando.Parameters.Add(new MySqlParameter("cidade", txtCidade.Text));
-            comando.Parameters.Add(new MySqlParameter("bairro", txtCidade.Text));
+            comando.Parameters.Add(new MySqlParameter("bairro", txtBairro.Text));
             comando.ExecuteNonQuery();
             connection.Close();
 

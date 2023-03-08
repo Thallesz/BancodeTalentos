@@ -38,29 +38,17 @@ namespace TccBancoTalentos
             }
 
             DataTable empregos = new DataTable();
-            try
-            {
-                Log.Information("Adicionando Colunas");
+          
                 empregos.Columns.Add("vaga");
                 empregos.Columns.Add("salario");
                 empregos.Columns.Add("cargah");
                 empregos.Columns.Add("empresa");
                 empregos.Columns.Add("cidade");
                 empregos.Columns.Add("bairro");
-                Log.Information("Colunas Adicionadas");
-            }
-            catch (Exception j)
-            {
-                Log.Error("Informações Não encontradas!" + j.Message);
-            }
-            finally
-            {
-                Log.Warning("Fim");
-            }
 
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,empresa,cidade,bairro from vagasdisponiveis", connection);
+            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,empresa,cidade,bairro from vagasdisponiveis where (1=1) ", connection);
 
             if (droplistCidade.SelectedIndex > 0)
             {

@@ -20,7 +20,7 @@
                         <asp:BoundField DataField="empresa" HeaderText="EMPRESA" />
                         <asp:BoundField DataField="cidade" HeaderText="CIDADE" />
                         <asp:BoundField DataField="bairro" HeaderText="BAIRRO" />
-                        <asp:ButtonField ButtonType="Link" CommandName="candidatar" ControlStyle-CssClass="btn btn-primary" Text="Candidatar" />
+                        <asp:ButtonField ButtonType="Link" CommandName="candidatar" ControlStyle-CssClass="btn btn-primary" Text="Candidatar"/>
                     </Columns>
                 </asp:GridView>
             </div>

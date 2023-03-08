@@ -151,7 +151,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Estilo\EstiloMestre.css" />
-    <Content Include="Estilo\img\telafundo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -164,6 +163,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="img\telafundo.jpg" />
     <Content Include="TelaBusca\VisualizarUsuários.aspx" />
     <Content Include="TelaCadastro\CadastroUser.aspx" />
     <Content Include="TelaCadastro\CadastroVaga.aspx" />

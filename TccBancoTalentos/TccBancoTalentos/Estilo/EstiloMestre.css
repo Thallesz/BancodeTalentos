@@ -1,8 +1,7 @@
 ﻿.button {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right, rgb(204, 108, 207), rgba(76, 8, 94, 0.301));
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -10,9 +9,9 @@
     width: 150px;
     outline: none;
     color: #fff;
-    background-color: #0015ff;
+    background-color: #2B4691;
     border: none;
-    border-radius: 15px;
+    padding:5px;
 }
 
     .button:hover {
@@ -20,7 +19,7 @@
     }
 
     .button:active {
-        background-color: #0015ff;
+        background-color: #2B4691;
         box-shadow: 0 5px 5px rgb(56, 55, 55);
         transform: translateY(4px);
     }
@@ -38,7 +37,7 @@
     color: aliceblue;
     background-color: #5918b7;
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
     .buttonEmpregos:hover {
@@ -60,6 +59,7 @@
     margin-right: 25px;
 }
 
+
 .content-box {
     margin-top: 90px;
     margin-left: 250px;
@@ -71,6 +71,7 @@
 .container-principal {
     display: grid;
     height: 100vh;
+    color:dimgray
 }
 
 .gridview-exemplo {

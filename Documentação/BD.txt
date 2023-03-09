@@ -5,14 +5,15 @@ CREATE TABLE gerente(
 	user varchar(15),
     senha varchar(15)
 );
-CREATE TABLE usuario(
+CREATE TABLE candidato(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome varchar(200),
     cpf varchar(11),
     email varchar(100),
     senha varchar(50),
     endereco varchar(200),
-    celular varchar(15)
+    celular varchar(15),
+    datanasc date
 );
 CREATE TABLE vagasdisponiveis(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,

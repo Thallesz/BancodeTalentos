@@ -64,9 +64,9 @@ namespace TccBancoTalentos.TelaCadastroUser
             else
             {               
                     connection.Open();
-                    string endereco = txtEstado.Text + "," + txtCidade.Text + ",";
-                    var comando = new MySqlCommand($@"INSERT INTO usuario (nome,cpf,email,celular,endereco) VALUES (@nome,@cpf,@email,@celular,@endereco)", connection);
-                    if (txtNomeUser.Text == "" || txtCPFUser.Text == "" || txtEmail.Text == "" || txtCidade.Text == "" || txtCelular.Text == "")
+                    string endereco = droplistEstado.Text + "," + droplistCidade.Text;
+                    var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,endereco,senha,datanasc) VALUES (@nome,@senha,@datanasc,@cpf,@email,@celular,@endereco)", connection);
+                    if (txtNomeUser.Text == "" || txtCPFUser.Text == "" || txtEmail.Text == ""  || txtCelular.Text == "")
                     {
                         SiteMaster.ExibirAlert(this, "Preencha todos os campos!");
                         return;
@@ -76,6 +76,8 @@ namespace TccBancoTalentos.TelaCadastroUser
                     comando.Parameters.Add(new MySqlParameter("cpf", txtCPFUser.Text));
                     comando.Parameters.Add(new MySqlParameter("email", txtEmail.Text));
                     comando.Parameters.Add(new MySqlParameter("celular", txtCelular.Text));
+                    comando.Parameters.Add(new MySqlParameter("senha", txtSenha.Text));
+                    comando.Parameters.Add(new MySqlParameter("datanasc", txtNasc.Text));
                     comando.Parameters.Add(new MySqlParameter("endereco", endereco));
                     comando.ExecuteNonQuery();  
                     connection.Close();

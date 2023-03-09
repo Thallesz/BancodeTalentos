@@ -51,6 +51,15 @@ namespace TccBancoTalentos.TelaCadastroUser
         protected global::System.Web.UI.WebControls.Label lblAlertaCpf;
 
         /// <summary>
+        /// Controle txtNasc.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtNasc;
+
+        /// <summary>
         /// Controle txtSenha.
         /// </summary>
         /// <remarks>
@@ -69,22 +78,31 @@ namespace TccBancoTalentos.TelaCadastroUser
         protected global::System.Web.UI.WebControls.TextBox txtCelular;
 
         /// <summary>
-        /// Controle txtCidade.
+        /// Controle droplistCidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCidade;
+        protected global::System.Web.UI.WebControls.DropDownList droplistCidade;
 
         /// <summary>
-        /// Controle txtEstado.
+        /// Controle droplistEstado.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEstado;
+        protected global::System.Web.UI.WebControls.DropDownList droplistEstado;
+
+        /// <summary>
+        /// Controle checkboxConcord.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkboxConcord;
 
         /// <summary>
         /// Controle btnCadUser.

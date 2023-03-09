@@ -12,9 +12,7 @@
                         <Columns>
                             <asp:BoundField DataField="id" HeaderText="ID" />
                             <asp:BoundField DataField="nome" HeaderText="NOME" />
-                            <asp:BoundField DataField="formacao" HeaderText="FORMAÇÃO" />
                             <asp:BoundField DataField="cpf" HeaderText="CPF" />
-                            <asp:BoundField DataField="rg" HeaderText="RG" />
                             <asp:BoundField DataField="email" HeaderText="EMAIL" />
                             <asp:BoundField DataField="endereco" HeaderText="ENDEREÇO" />
                             <asp:BoundField DataField="celular" HeaderText="CELULAR" />

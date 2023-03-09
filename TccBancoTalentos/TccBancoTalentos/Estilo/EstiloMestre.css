@@ -11,7 +11,7 @@
     color: #fff;
     background-color: #2B4691;
     border: none;
-    padding:5px;
+    padding: 5px;
 }
 
     .button:hover {
@@ -71,7 +71,6 @@
 .container-principal {
     display: grid;
     height: 100vh;
-    color:dimgray
 }
 
 .gridview-exemplo {

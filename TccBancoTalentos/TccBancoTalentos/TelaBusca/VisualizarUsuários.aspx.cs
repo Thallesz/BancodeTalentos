@@ -20,16 +20,14 @@ namespace TccBancoTalentos.TelaBusca
             DataTable usuarios = new DataTable();
             usuarios.Columns.Add("id");
             usuarios.Columns.Add("nome");
-            usuarios.Columns.Add("formacao");
             usuarios.Columns.Add("cpf");
-            usuarios.Columns.Add("rg");
             usuarios.Columns.Add("email");
             usuarios.Columns.Add("endereco");
             usuarios.Columns.Add("celular");
 
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT id,nome,formacao,cpf,rg,email,endereco,celular FROM usuario", connection);
+            var comando = new MySqlCommand($"SELECT id,nome,cpf,email,endereco,celular FROM candidato", connection);
 
             var reader = comando.ExecuteReader();
             while (reader.Read())
@@ -37,9 +35,7 @@ namespace TccBancoTalentos.TelaBusca
                 var linha = usuarios.NewRow();
                 linha["id"] = reader.GetInt32("id");
                 linha["nome"] = reader.GetString("nome");
-                linha["formacao"] = reader.GetString("formacao");
                 linha["cpf"] = reader.GetString("cpf");
-                linha["rg"] = reader.GetString("rg");
                 linha["email"] = reader.GetString("email");
                 linha["endereco"] = reader.GetString("endereco");
                 linha["celular"] = reader.GetString("celular");

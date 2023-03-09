@@ -7,11 +7,22 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace TccBancoTalentos {
-    
-    
-    public partial class SiteMaster {
-        
+namespace TccBancoTalentos
+{
+
+
+    public partial class SiteMaster
+    {
+
+        /// <summary>
+        /// Controle btnCad.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCad;
+
         /// <summary>
         /// Controle MainContent.
         /// </summary>
@@ -20,5 +31,14 @@ namespace TccBancoTalentos {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+
+        /// <summary>
+        /// Controle MainContent1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent1;
     }
 }

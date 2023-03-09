@@ -11,7 +11,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent1" runat="server">
     <div class="container-principal">
         <h2 style="font-size: 22px; color: #2B4691; margin-top: 50px">Cadastre-se</h2>
-        <div style="border: none; padding: 58px; background-color: #F8F9FA; margin-top: 50px; border-radius: 0px">
+        <div style="border: none; padding: 58px; background-color: #F8F9FA; margin-top: 10px; border-radius: 0px">
             <div class="row">
                 <div class="col-sm-6">
                     <h2 style="font-size: 20px; color: #2B4691">DADOS PESSOAIS</h2>
@@ -32,24 +32,24 @@
                 <div class="col-sm-6">
                     <div class="row-mb-3" style="margin-left: 50px; margin-top: 60px">
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">SENHA:</h2>
-                        <asp:TextBox runat="server" CssClass="form-control" ID="txtSenha" placeholder="Senha" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:TextBox>
+                        <asp:TextBox runat="server" CssClass="form-control" TextMode="Password" ID="txtSenha" placeholder="Senha" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:TextBox>
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">CELULAR:</h2>
                         <asp:TextBox runat="server" CssClass="form-control" ID="txtCelular" placeholder="Celular" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:TextBox>
 
                     </div>
                     <div class="row-mb-3" style="margin-left: 50px">
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">CIDADE:</h2>
-                        <asp:DropDownList runat="server" ID="droplistCidade" AutoPostBack="true" placeholder="SELECIONE A CIDADE" Style="text-align: initial; border-radius: 0px; border-color: #ced4da;padding:10px 20px"></asp:DropDownList>
+                        <asp:DropDownList runat="server" ID="droplistCidade" AutoPostBack="true" placeholder="SELECIONE A CIDADE" Style="text-align: initial; border-radius: 0px; border-color: #ced4da;padding:6px 130px"></asp:DropDownList>
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">ESTADO</h2>
-                        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" placeholder="SELECIONE O ESTADO" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:DropDownList>
+                        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" placeholder="SELECIONE O ESTADO" Style="text-align: initial; border-radius: 0px; border-color: #ced4da;padding:6px 130px"></asp:DropDownList>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row" style="margin-top:50px">
-        <asp:CheckBox runat="server" ID="checkboxConcord" Text="CONCORDO EM CRIAR A CONTA E RECEBER ANÚNCIOS DE VAGAS POR EMAIL" style="color:#2B4691;margin-left:100px"/>
-        <asp:Button runat="server" ID="btnCadUser" OnClick="btnCadUser_Click" CssClass="button" Text="CADASTRAR" Style="margin-top: 50px; margin-left: 991px" />
+        <asp:CheckBox runat="server" ID="checkboxConcord" OnCheckedChanged="checkboxConcord_CheckedChanged" Text="CONCORDO EM CRIAR A CONTA E RECEBER ANÚNCIOS DE VAGAS POR EMAIL" style="color:#2B4691;margin-left:100px"/>
+        <asp:Button runat="server" ID="btnCadUser" OnClick="btnCadUser_Click" CssClass="button" Text="CADASTRAR" Enabled="false" Style="margin-top: 50px; margin-left: 991px" />
     </div>
         <div style="padding-bottom: 100px"></div>
 </asp:Content>

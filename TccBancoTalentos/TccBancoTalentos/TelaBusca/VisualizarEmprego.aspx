@@ -1,6 +1,14 @@
 ﻿<%@ Page Title="Empregos Disponíveis" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VisualizarEmprego.aspx.cs" Inherits="TccBancoTalentos.VisualizarEmprego" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
+
+    <img src="../img/banner_vagas.png" class="img-fluid" style="background-repeat: no-repeat; width: 1304px; height: 350px" />
+    <br />
+
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent1" runat="server">
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
 
     <div style="padding: 10px">
@@ -19,7 +27,7 @@
                         <asp:BoundField DataField="cargah" HeaderText="CARGA HORARIA" />
                         <asp:BoundField DataField="empresa" HeaderText="EMPRESA" />
                         <asp:BoundField DataField="cidade" HeaderText="CIDADE" />
-                        <asp:BoundField DataField="bairro" HeaderText="BAIRRO" />
+                        <asp:BoundField DataField="estado" HeaderText="ESTADO" />
                         <asp:ButtonField ButtonType="Link" CommandName="candidatar" ControlStyle-CssClass="btn btn-primary" Text="Candidatar"/>
                     </Columns>
                 </asp:GridView>

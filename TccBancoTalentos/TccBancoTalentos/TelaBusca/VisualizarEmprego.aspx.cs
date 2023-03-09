@@ -44,11 +44,11 @@ namespace TccBancoTalentos
                 empregos.Columns.Add("cargah");
                 empregos.Columns.Add("empresa");
                 empregos.Columns.Add("cidade");
-                empregos.Columns.Add("bairro");
+                empregos.Columns.Add("estado");
 
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,empresa,cidade,bairro from vagasdisponiveis where (1=1) ", connection);
+            var comando = new MySqlCommand($"SELECT vaga,salario,cargah,empresa,cidade,estado from vagasdisponiveis where (1=1) ", connection);
 
             if (droplistCidade.SelectedIndex > 0)
             {
@@ -64,7 +64,7 @@ namespace TccBancoTalentos
                 linha["cargah"] = reader.GetTimeSpan("cargah");
                 linha["empresa"] = reader.GetString("empresa");
                 linha["cidade"] = reader.GetString("cidade");
-                linha["bairro"] = reader.GetString("bairro");
+                linha["estado"] = reader.GetString("estado");
                 empregos.Rows.Add(linha);
 
             }

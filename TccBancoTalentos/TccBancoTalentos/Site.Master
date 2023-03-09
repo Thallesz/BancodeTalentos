@@ -50,10 +50,10 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarEmprego.aspx">Empregos Disponíveis</a></li>
+                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarEmprego.aspx">Vagas</a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaCadastro/CadastroVaga.aspx">Inserir Vaga</a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px" href="TelaBusca/VisualizarUsuários.aspx">Usuários</a></li>
-                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px; margin-left: 570px" href="TelaLogin/Login.aspx">Login</a></li>                        
+                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 14px; margin-left: 700px" href="TelaLogin/Login.aspx">Login</a></li>                        
                         <li class="nav-item">
                             <asp:Button ID="btnCad" runat="server" OnClick="btnCad_Click" Text="Cadastre-se" CssClass="btn btn-primary ml-auto" style="margin-top:10px;border-radius:0px;background-color:#64B8E9"></asp:Button>
                         </li>

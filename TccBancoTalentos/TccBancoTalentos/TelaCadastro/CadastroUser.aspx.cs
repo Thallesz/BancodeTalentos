@@ -18,6 +18,19 @@ namespace TccBancoTalentos.TelaCadastroUser
             connection = new MySqlConnection(SiteMaster.ConnectionString);
         }
 
+        protected void checkboxConcord_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkboxConcord.Checked == true)
+            {
+                btnCadUser.Enabled = true;
+            }
+            else
+            {
+                btnCadUser.Enabled = false;
+                SiteMaster.ExibirAlert(this, "Preencha todas as informações!");
+            }
+        }
+
         public static bool IsCpf(string cpf)
         {
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -53,42 +66,7 @@ namespace TccBancoTalentos.TelaCadastroUser
             digito = digito + resto.ToString();
             return cpf.EndsWith(digito);
         }
-       
-        protected void btnCadUser_Click(object sender, EventArgs e)
-        {
-            if (IsCpf(txtCPFUser.Text) == false)
-            {
-                SiteMaster.ExibirAlert(this, "Dados Inválidos.");
-                return;
-            }
-            else
-            {               
-                    connection.Open();
-                    string endereco = droplistEstado.Text + "," + droplistCidade.Text;
-                    var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,endereco,senha,datanasc) VALUES (@nome,@senha,@datanasc,@cpf,@email,@celular,@endereco)", connection);
-                    if (txtNomeUser.Text == "" || txtCPFUser.Text == "" || txtEmail.Text == ""  || txtCelular.Text == "")
-                    {
-                        SiteMaster.ExibirAlert(this, "Preencha todos os campos!");
-                        return;
-                    }
 
-                    comando.Parameters.Add(new MySqlParameter("nome", txtNomeUser.Text));
-                    comando.Parameters.Add(new MySqlParameter("cpf", txtCPFUser.Text));
-                    comando.Parameters.Add(new MySqlParameter("email", txtEmail.Text));
-                    comando.Parameters.Add(new MySqlParameter("celular", txtCelular.Text));
-                    comando.Parameters.Add(new MySqlParameter("senha", txtSenha.Text));
-                    comando.Parameters.Add(new MySqlParameter("datanasc", txtNasc.Text));
-                    comando.Parameters.Add(new MySqlParameter("endereco", endereco));
-                    comando.ExecuteNonQuery();  
-                    connection.Close();
-
-                    SiteMaster.ExibirAlert(this, "Usuário cadastrado com sucesso!");
-                
-
-
-            }
-
-        }
 
         protected void txtCPF_TextChanged(object sender, EventArgs e)
         {
@@ -102,6 +80,40 @@ namespace TccBancoTalentos.TelaCadastroUser
                 lblAlertaCpf.Text = "";
             }
 
+        }
+
+        protected void btnCadUser_Click(object sender, EventArgs e)
+        {
+            if (IsCpf(txtCPFUser.Text) == false)
+            {
+                SiteMaster.ExibirAlert(this, "Dados Inválidos.");
+                return;
+            }
+            else
+            {
+                connection.Open();
+                string endereco = droplistEstado.Text + "," + droplistCidade.Text;
+                var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,endereco,senha,datanasc) VALUES (@nome,@senha,@datanasc,@cpf,@email,@celular,@endereco)", connection);
+
+
+                if (txtNomeUser.Text == "" || txtCPFUser.Text == "" || txtEmail.Text == "" || txtCelular.Text == "" || txtSenha.Text == "" || droplistCidade.Text == "" || droplistEstado.Text == "" || txtNasc.Text == "")
+                {
+                    SiteMaster.ExibirAlert(this, "Preencha todos os campos!");
+                    return;
+                }
+
+                comando.Parameters.Add(new MySqlParameter("nome", txtNomeUser.Text));
+                comando.Parameters.Add(new MySqlParameter("cpf", txtCPFUser.Text));
+                comando.Parameters.Add(new MySqlParameter("email", txtEmail.Text));
+                comando.Parameters.Add(new MySqlParameter("celular", txtCelular.Text));
+                comando.Parameters.Add(new MySqlParameter("senha", txtSenha.Text));
+                comando.Parameters.Add(new MySqlParameter("datanasc", txtNasc.Text));
+                comando.Parameters.Add(new MySqlParameter("endereco", endereco));
+                comando.ExecuteNonQuery();
+                connection.Close();
+
+                SiteMaster.ExibirAlert(this, "Usuário cadastrado com sucesso!");
+            }
         }
     }
 }

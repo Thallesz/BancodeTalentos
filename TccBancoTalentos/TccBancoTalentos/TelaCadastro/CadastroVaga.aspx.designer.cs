@@ -7,13 +7,11 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace TccBancoTalentos.TelaCadastroVaga
-{
-
-
-    public partial class CadastroVaga
-    {
-
+namespace TccBancoTalentos.TelaCadastroVaga {
+    
+    
+    public partial class CadastroVaga {
+        
         /// <summary>
         /// Controle txtVaga.
         /// </summary>
@@ -22,7 +20,7 @@ namespace TccBancoTalentos.TelaCadastroVaga
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtVaga;
-
+        
         /// <summary>
         /// Controle txtSalario.
         /// </summary>
@@ -31,7 +29,7 @@ namespace TccBancoTalentos.TelaCadastroVaga
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSalario;
-
+        
         /// <summary>
         /// Controle txtCargaH.
         /// </summary>
@@ -40,7 +38,7 @@ namespace TccBancoTalentos.TelaCadastroVaga
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCargaH;
-
+        
         /// <summary>
         /// Controle txtEmpresa.
         /// </summary>
@@ -49,25 +47,25 @@ namespace TccBancoTalentos.TelaCadastroVaga
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmpresa;
-
+        
         /// <summary>
-        /// Controle txtCidade.
+        /// Controle droplistEstado.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCidade;
-
+        protected global::System.Web.UI.WebControls.DropDownList droplistEstado;
+        
         /// <summary>
-        /// Controle txtEstado.
+        /// Controle droplistCidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEstado;
-
+        protected global::System.Web.UI.WebControls.DropDownList droplistCidade;
+        
         /// <summary>
         /// Controle btnRegistar.
         /// </summary>

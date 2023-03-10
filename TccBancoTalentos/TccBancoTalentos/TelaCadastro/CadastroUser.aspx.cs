@@ -20,6 +20,7 @@ namespace TccBancoTalentos.TelaCadastroUser
 
         protected void checkboxConcord_CheckedChanged(object sender, EventArgs e)
         {
+            
             if (checkboxConcord.Checked == true)
             {
                 btnCadUser.Enabled = true;
@@ -29,6 +30,7 @@ namespace TccBancoTalentos.TelaCadastroUser
                 btnCadUser.Enabled = false;
                 SiteMaster.ExibirAlert(this, "Preencha todas as informações!");
             }
+
         }
 
         public static bool IsCpf(string cpf)
@@ -65,21 +67,6 @@ namespace TccBancoTalentos.TelaCadastroUser
                 resto = 11 - resto;
             digito = digito + resto.ToString();
             return cpf.EndsWith(digito);
-        }
-
-
-        protected void txtCPF_TextChanged(object sender, EventArgs e)
-        {
-            if (IsCpf(txtCPFUser.Text) == false)
-            {
-                lblAlertaCpf.Text = "CPF invalido!";
-                lblAlertaCpf.ForeColor = Color.Red;
-            }
-            else
-            {
-                lblAlertaCpf.Text = "";
-            }
-
         }
 
         protected void btnCadUser_Click(object sender, EventArgs e)

@@ -29,5 +29,11 @@ namespace TccBancoTalentos
             }
                 
         }
+
+        protected void btnCad_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("~/TelaCadastro/CadastroUser.aspx");
+        }
     }
 }

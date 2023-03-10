@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VisualizarUsuários.aspx.cs" Inherits="TccBancoTalentos.TelaBusca.VisualizarUsuários" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent1" runat="server">
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
 
 
     <div style="padding-top: 100px"></div>
     <div class="container-principal">
         <div class="row">
-            <div style="border:none; border-color: black; padding: 30px; border-radius: 20px; box-shadow: 10px 10px 20px #030303;">
+            <div style="border:solid; border-color: black; padding: 30px; border-radius: 0px; background-color: #F8F9FA">
                     <asp:GridView runat="server" ID="grdUsuarios" OnRowCommand="grdUsuarios_RowCommand" AutoGenerateColumns="false" Width="100%" AllowPaging="true" PageSize="20" CssClass="gridview-exemplo" Style="color: white">
                         <Columns>
                             <asp:BoundField DataField="id" HeaderText="ID" />

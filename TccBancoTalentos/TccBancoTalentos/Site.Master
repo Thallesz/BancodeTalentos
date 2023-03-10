@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="container-fluid" style="padding-left: 0px; padding-right: initial">
+        <div class="container-fluid" style="padding-left: 0px; padding-right:0px">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
 
@@ -72,7 +72,6 @@
             <asp:ContentPlaceHolder ID="MainContent1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-
     </form>
 </body>
 </html>

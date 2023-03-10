@@ -20,7 +20,7 @@ namespace TccBancoTalentos.TelaCadastroVaga
         {
             connection.Open();
             var comando = new MySqlCommand($@"INSERT INTO vagasdisponiveis (vaga,salario,cargah,empresa,cidade,estado) VALUES (@vaga,@salario,@cargah,@empresa,@cidade,@estado)",connection);
-            if(txtVaga.Text =="" || txtSalario.Text == "" || txtCargaH.Text == "" || txtEmpresa.Text == "" || txtCidade.Text == "" || txtEstado.Text == "")
+            if(txtVaga.Text =="" || txtSalario.Text == "" || txtCargaH.Text == "" || txtEmpresa.Text == "" || droplistCidade.Text == "" || droplistEstado.Text == "")
             {
                 SiteMaster.ExibirAlert(this, "Preencha todos os campos!");
                 return;
@@ -30,8 +30,8 @@ namespace TccBancoTalentos.TelaCadastroVaga
             comando.Parameters.Add(new MySqlParameter("salario", txtSalario.Text));
             comando.Parameters.Add(new MySqlParameter("cargah", txtCargaH.Text));
             comando.Parameters.Add(new MySqlParameter("empresa", txtEmpresa.Text));
-            comando.Parameters.Add(new MySqlParameter("cidade", txtCidade.Text));
-            comando.Parameters.Add(new MySqlParameter("estado", txtEstado.Text));
+            comando.Parameters.Add(new MySqlParameter("cidade", droplistCidade.Text));
+            comando.Parameters.Add(new MySqlParameter("estado", droplistEstado.Text));
             comando.ExecuteNonQuery();
             connection.Close();
 

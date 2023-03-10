@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
 
-    <img src="../img/banner_vagas.png" class="img-fluid" style="background-repeat: no-repeat; width: 1304px; height: 350px" />
+    <img src="../img/banner_vagas.png" class="img-fluid" style="background-repeat: no-repeat; width: 1583px; height: 350px" />
     <br />
 
 </asp:Content>
@@ -19,7 +19,7 @@
     <div class="container-principal">
         <div class="row">
 
-            <div style="border:none; border-color: black; padding: 30px; border-radius: 20px; box-shadow: 10px 10px 20px #030303;">
+            <div style="border:solid; border-color: black; padding: 30px; border-radius: 20px; background-color: #F8F9FA">
                 <asp:GridView runat="server" ID="grdEmpregos" OnRowCommand="grdEmpregos_RowCommand" AutoGenerateColumns="false" Width="100%" AllowPaging="true" PageSize="20" CssClass="gridview-exemplo">
                     <Columns>
                         <asp:BoundField DataField="vaga" HeaderText="VAGAS" />

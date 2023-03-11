@@ -16,6 +16,41 @@ namespace TccBancoTalentos.TelaCadastroUser
         protected void Page_Load(object sender, EventArgs e)
         {
             connection = new MySqlConnection(SiteMaster.ConnectionString);
+
+            if(!IsPostBack)
+            {
+                connection.Open();
+
+                droplistEstado.Items.Clear();
+
+                var reader1 = new MySqlCommand("SELECT nome,id FROM estados ", connection).ExecuteReader();
+
+
+                while (reader1.Read())
+                {
+                    var estado = new ListItem(reader1.GetString("nome"), Convert.ToString(reader1.GetInt32("id")));
+                    droplistEstado.Items.Add(estado);
+                }
+
+                droplistEstado.SelectedIndex = 0;
+                connection.Close();
+
+                connection.Open();
+
+                droplistCidade.Items.Clear();
+
+                var reader2 = new MySqlCommand("SELECT C.nome,C.id FROM cidades C INNER JOIN estados E ON E.id = C.id_estado WHERE E.id =" + droplistEstado.SelectedValue, connection).ExecuteReader();
+
+                droplistCidade.Items.Add("");
+
+                while (reader2.Read())
+                {
+                    var cidade = new ListItem(reader2.GetString("nome"), Convert.ToString(reader2.GetInt32("id")));
+                    droplistCidade.Items.Add(cidade);
+                }
+
+                connection.Close();
+            }
         }
 
         protected void checkboxConcord_CheckedChanged(object sender, EventArgs e)

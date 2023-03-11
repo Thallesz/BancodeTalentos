@@ -39,9 +39,9 @@
                     </div>
                     <div class="row-mb-3" style="margin-left: 50px">
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">ESTADO</h2>
-                        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" placeholder="SELECIONE O ESTADO" Style="text-align: initial; border-radius: 0px; border-color: #ced4da;padding:6px 130px"></asp:DropDownList>
+                        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:DropDownList>
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">CIDADE:</h2>
-                        <asp:DropDownList runat="server" ID="droplistCidade" AutoPostBack="true" placeholder="SELECIONE A CIDADE" Style="text-align: initial; border-radius: 0px; border-color: #ced4da;padding:6px 130px"></asp:DropDownList>                       
+                        <asp:DropDownList runat="server" ID="droplistCidade" AutoPostBack="true" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:DropDownList>                       
                     </div>
                 </div>
             </div>

@@ -162,8 +162,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="img\telafundo.jpg" />
     <Content Include="TelaBusca\VisualizarUsuários.aspx" />
     <Content Include="TelaCadastro\CadastroUser.aspx" />
     <Content Include="TelaCadastro\CadastroVaga.aspx" />
@@ -311,6 +311,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Data\" />
+    <Folder Include="img\" />
     <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>

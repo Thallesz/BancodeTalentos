@@ -1,4 +1,4 @@
-﻿using MySqlConnector;
+﻿    using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,7 +55,7 @@ namespace TccBancoTalentos.TelaCadastroVaga
         {
             connection.Open();
             var comando = new MySqlCommand($@"INSERT INTO vagasdisponiveis (vaga,salario,cargah,empresa,cidade,estado) VALUES (@vaga,@salario,@cargah,@empresa,@cidade,@estado)",connection);
-            if(txtVaga.Text =="" || txtSalario.Text == "" || txtCargaH.Text == "" || txtEmpresa.Text == "" || droplistCidade.Text == "" || droplistEstado.Text == "")
+            if(txtVaga.Text =="" || txtSalario.Text == "" || txtCargaH.Text == "" || txtEmpresa.Text == "" || droplistCidade.SelectedValue == "" || droplistEstado.SelectedValue == "")
             {
                 SiteMaster.ExibirAlert(this, "Preencha todos os campos!");
                 return;
@@ -65,8 +65,8 @@ namespace TccBancoTalentos.TelaCadastroVaga
             comando.Parameters.Add(new MySqlParameter("salario", txtSalario.Text));
             comando.Parameters.Add(new MySqlParameter("cargah", txtCargaH.Text));
             comando.Parameters.Add(new MySqlParameter("empresa", txtEmpresa.Text));
-            comando.Parameters.Add(new MySqlParameter("cidade", droplistCidade.Text));
-            comando.Parameters.Add(new MySqlParameter("estado", droplistEstado.Text));
+            comando.Parameters.Add(new MySqlParameter("cidade", droplistCidade.SelectedValue));
+            comando.Parameters.Add(new MySqlParameter("estado", droplistEstado.SelectedValue));
             comando.ExecuteNonQuery();
             connection.Close();
 

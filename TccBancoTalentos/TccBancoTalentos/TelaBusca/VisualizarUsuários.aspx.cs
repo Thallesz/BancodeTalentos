@@ -50,7 +50,17 @@ namespace TccBancoTalentos.TelaBusca
 
         protected void grdUsuarios_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-           
+           if(e.CommandName == "deletar")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+                var tabela = (DataTable)Session["tabela"];
+                connection.Open();
+                var commando = new MySqlCommand("DELETE FROM candidato WHERE id = " + tabela.Rows[index]["id"].ToString(),connection);
+                commando.ExecuteNonQuery();
+                connection.Close();
+
+                SiteMaster.ExibirAlert(this, "Candidato excluido com sucesso!");
+            }
 
         }
 

@@ -115,7 +115,7 @@ namespace TccBancoTalentos.TelaCadastroUser
             {
                 connection.Open();
                 string endereco = droplistEstado.Text + "," + droplistCidade.Text;
-                var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,endereco,senha,datanasc) VALUES (@nome,@senha,@datanasc,@cpf,@email,@celular,@endereco)", connection);
+                var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,endereco,senha,datanasc) VALUES (@nome,@cpf,@email,@celular,@endereco,@senha,@datanasc)", connection);
 
 
                 if (txtNomeUser.Text == "" || txtCPFUser.Text == "" || txtEmail.Text == "" || txtCelular.Text == "" || txtSenha.Text == "" || droplistCidade.Text == "" || droplistEstado.Text == "" || txtNasc.Text == "")

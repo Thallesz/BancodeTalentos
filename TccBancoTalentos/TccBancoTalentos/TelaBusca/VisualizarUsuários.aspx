@@ -15,7 +15,7 @@
                             <asp:BoundField DataField="cpf" HeaderText="CPF" />
                             <asp:BoundField DataField="email" HeaderText="EMAIL" />
                             <asp:BoundField DataField="endereco" HeaderText="ENDEREÇO" />
-                            <asp:BoundField DataField="celular" HeaderText="CELULAR" />
+                            <asp:BoundField DataField="celular" HeaderText="CELULAR" />                           
                             <asp:ButtonField ButtonType="Link" CommandName="editar" ControlStyle-CssClass="btn btn-primary" Text="Editar" />
                             <asp:ButtonField ButtonType="Link" CommandName="deletar" ControlStyle-CssClass="btn btn-primary" Text="Deletar" />
                         </Columns>

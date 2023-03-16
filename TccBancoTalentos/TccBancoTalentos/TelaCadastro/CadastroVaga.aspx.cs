@@ -72,5 +72,24 @@ namespace TccBancoTalentos.TelaCadastroVaga
 
             SiteMaster.ExibirAlert(this, "Vaga Cadastrada com sucesso!");
         }
+
+        protected void droplistEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            connection.Open();
+
+            droplistCidade.Items.Clear();
+
+            var reader2 = new MySqlCommand("SELECT C.nome,C.id FROM cidades C INNER JOIN estados E ON E.id = C.id_estado WHERE E.id =" + droplistEstado.SelectedValue, connection).ExecuteReader();
+
+            droplistCidade.Items.Add("");
+
+            while (reader2.Read())
+            {
+                var cidade = new ListItem(reader2.GetString("nome"), Convert.ToString(reader2.GetInt32("id")));
+                droplistCidade.Items.Add(cidade);
+            }
+
+            connection.Close();
+        }
     }
 }

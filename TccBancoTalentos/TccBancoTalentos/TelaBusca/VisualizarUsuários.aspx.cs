@@ -22,12 +22,15 @@ namespace TccBancoTalentos.TelaBusca
             usuarios.Columns.Add("nome");
             usuarios.Columns.Add("cpf");
             usuarios.Columns.Add("email");
-            usuarios.Columns.Add("endereco");
+            usuarios.Columns.Add("estado");
+            usuarios.Columns.Add("cidade");
             usuarios.Columns.Add("celular");
 
             connection.Open();
 
-            var comando = new MySqlCommand($"SELECT id,nome,cpf,email,endereco,celular FROM candidato", connection);
+            var comando = new MySqlCommand($"SELECT CT.id,E.nome estado,C.nome cidade,CT.nome,cpf,email,CT.cidade,CT.estado,celular FROM candidato CT " +
+                $"INNER JOIN estados E ON CT.estado = E.id INNER JOIN cidades C ON CT.cidade = C.id", connection);
+
 
             var reader = comando.ExecuteReader();
             while (reader.Read())
@@ -37,7 +40,8 @@ namespace TccBancoTalentos.TelaBusca
                 linha["nome"] = reader.GetString("nome");
                 linha["cpf"] = reader.GetString("cpf");
                 linha["email"] = reader.GetString("email");
-                linha["endereco"] = reader.GetString("endereco");
+                linha["estado"] = reader.GetString("estado");
+                linha["cidade"] = reader.GetString("cidade");
                 linha["celular"] = reader.GetString("celular");
                 usuarios.Rows.Add(linha);
             }

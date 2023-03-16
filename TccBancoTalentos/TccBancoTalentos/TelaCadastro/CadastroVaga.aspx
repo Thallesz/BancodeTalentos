@@ -34,9 +34,9 @@
                         <h2 style="font-size: 16px; color:#2B4691;cursor:default">EMPRESA:</h2>
                         <asp:TextBox runat="server" CssClass="form-control" ID="txtEmpresa" placeholder="Empresa" Style="text-align: initial; border-radius: 0px; border-color:#ced4da"></asp:TextBox>
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">ESTADO</h2>
-                        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" placeholder="SELECIONE O ESTADO" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:DropDownList>
+                        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" OnSelectedIndexChanged="droplistEstado_SelectedIndexChanged" placeholder="SELECIONE O ESTADO" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:DropDownList>
                         <h2 style="font-size: 16px; color: #2B4691; cursor: default">CIDADE:</h2>
-                        <asp:DropDownList runat="server" ID="droplistCidade" AutoPostBack="true" placeholder="SELECIONE A CIDADE" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:DropDownList>                      
+                        <asp:DropDownList runat="server" ID="droplistCidade" AutoPostBack="false" placeholder="SELECIONE A CIDADE" Style="text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:DropDownList>                      
                     </div>
                 </div>
             </div>

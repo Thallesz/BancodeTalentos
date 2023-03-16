@@ -114,8 +114,7 @@ namespace TccBancoTalentos.TelaCadastroUser
             else
             {
                 connection.Open();
-                string endereco = droplistEstado.Text + "," + droplistCidade.Text;
-                var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,endereco,senha,datanasc) VALUES (@nome,@cpf,@email,@celular,@endereco,@senha,@datanasc)", connection);
+                var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,estado,cidade,senha,datanasc) VALUES (@nome,@cpf,@email,@celular,@estado,@cidade,@senha,@datanasc)", connection);
 
 
                 if (txtNomeUser.Text == "" || txtCPFUser.Text == "" || txtEmail.Text == "" || txtCelular.Text == "" || txtSenha.Text == "" || droplistCidade.Text == "" || droplistEstado.Text == "" || txtNasc.Text == "")
@@ -130,12 +129,32 @@ namespace TccBancoTalentos.TelaCadastroUser
                 comando.Parameters.Add(new MySqlParameter("celular", txtCelular.Text));
                 comando.Parameters.Add(new MySqlParameter("senha", txtSenha.Text));
                 comando.Parameters.Add(new MySqlParameter("datanasc", txtNasc.Text));
-                comando.Parameters.Add(new MySqlParameter("endereco", endereco));
+                comando.Parameters.Add(new MySqlParameter("estado", droplistEstado.SelectedValue));
+                comando.Parameters.Add(new MySqlParameter("cidade", droplistCidade.SelectedValue));
                 comando.ExecuteNonQuery();
                 connection.Close();
 
                 SiteMaster.ExibirAlert(this, "Usuário cadastrado com sucesso!");
             }
+        }
+
+        protected void droplistEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            connection.Open();
+
+            droplistCidade.Items.Clear();
+
+            var reader2 = new MySqlCommand("SELECT C.nome,C.id FROM cidades C INNER JOIN estados E ON E.id = C.id_estado WHERE E.id =" + droplistEstado.SelectedValue, connection).ExecuteReader();
+
+            droplistCidade.Items.Add("");
+
+            while (reader2.Read())
+            {
+                var cidade = new ListItem(reader2.GetString("nome"), Convert.ToString(reader2.GetInt32("id")));
+                droplistCidade.Items.Add(cidade);
+            }
+
+            connection.Close();
         }
     }
 }

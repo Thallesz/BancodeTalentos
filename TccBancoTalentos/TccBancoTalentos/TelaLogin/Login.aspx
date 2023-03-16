@@ -47,8 +47,8 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <div style="border: solid; border-color: cornflowerblue; padding: 30px; margin-top: 140px; border-radius: 0px; box-shadow: 5px 5px 10px; margin-left: -280px; margin-right: 400px">
-                    <h2 style="font-size: 16px; font-family: 'Franklin Gothic Book'; color: #212529">Usuário:</h2>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtUser" placeholder="Email" Style="border-color: black; text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:TextBox>
+                    <h2 style="font-size: 16px; font-family: 'Franklin Gothic Book'; color: #212529">E-mail:</h2>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail" placeholder="Email" Style="border-color: black; text-align: initial; border-radius: 0px; border-color: #ced4da"></asp:TextBox>
                     <br />
                     <h2 style="font-size: 16px; font-family: 'Franklin Gothic Book'; color: #212529">Senha:</h2>
                     <asp:TextBox runat="server" CssClass="form-control" ID="txtSenha" TextMode="Password" placeholder="Senha" Style="border-color: black; border-radius: 0px; border-color: #ced4da"></asp:TextBox>
@@ -63,7 +63,7 @@
         <div class="row" style="margin-top:50px">
             <a href="../TelaCadastro/CadastroUser.aspx" style="margin-left:350px">Esqueceu a senha?</a>                       
         </div>       
-        <div class="row" style="margin-top:10">
+        <div class="row" style="margin-top:10px">
             <a href="../TelaCadastro/CadastroUser.aspx" style="margin-left:350px">Não possui uma conta?</a> 
         </div>
     </form>

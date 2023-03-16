@@ -15,7 +15,7 @@
         <asp:DropDownList runat="server" ID="droplistCidade" AutoPostBack="false" Style="border-radius: 50px; border: 1px solid black; padding: 10px 20px; margin-left: 520px">
         </asp:DropDownList>
 
-        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" Style="border-radius: 50px; border: 1px solid black; padding: 10px 20px; margin-left: 520px"></asp:DropDownList>
+        <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" OnSelectedIndexChanged="droplistEstado_SelectedIndexChanged" Style="border-radius: 50px; border: 1px solid black; padding: 10px 20px; margin-left: 520px"></asp:DropDownList>
     </div>
     <div style="padding: 20px"></div>
     <div class="container-principal">

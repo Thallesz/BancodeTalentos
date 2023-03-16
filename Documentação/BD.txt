@@ -11,7 +11,8 @@ CREATE TABLE candidato(
     cpf varchar(11),
     email varchar(100),
     senha varchar(50),
-    endereco varchar(200),
+    cidade varchar(100),
+    estado varchar(100),
     celular varchar(15),
     datanasc date
 );

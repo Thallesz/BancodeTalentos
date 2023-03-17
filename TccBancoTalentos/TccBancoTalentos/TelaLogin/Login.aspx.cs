@@ -25,15 +25,9 @@ namespace TccBancoTalentos
             }
             else
             {
-                SiteMaster.ExibirAlert(this, "Usuário e/ou senha incorretos!");
+                SiteMaster.ExibirAlert(this, "Email e/ou senha inválidos!");
             }
                 
-        }
-
-        protected void btnCad_Click(object sender, EventArgs e)
-        {
-
-            Response.Redirect("~/TelaCadastro/CadastroUser.aspx");
         }
     }
 }

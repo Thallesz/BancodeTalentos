@@ -16,7 +16,17 @@ namespace TccBancoTalentos.TelaLogin
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            var user = new Negocio.Empresa().Verifica_Empresa(txtEmail.Text, txtSenha.Text);
 
+            if (user != null)
+            {
+                Session["email"] = user;
+                Response.Redirect("../TelaCadastro/CadastroVaga.aspx");
+            }
+            else
+            {
+                SiteMaster.ExibirAlert(this, "Email e/ou senha inválidos!");
+            }
         }
     }
 }

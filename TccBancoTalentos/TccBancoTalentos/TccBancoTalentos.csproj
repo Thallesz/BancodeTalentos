@@ -214,6 +214,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\Empresa.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -233,6 +234,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Modelos\Empregos.cs" />
+    <Compile Include="Negocio\Empresa.cs" />
     <Compile Include="Negocio\Usuario.cs" />
     <Compile Include="TelaBusca\VisualizarUsuários.aspx.cs">
       <DependentUpon>VisualizarUsuários.aspx</DependentUpon>

@@ -60,10 +60,10 @@
             </div>
         </div>
         <div class="row" style="margin-top:50px">
-            <a href="../TelaCadastro/CadastroUser.aspx" style="margin-left:350px">Esqueceu a senha?</a>                       
+            <a href="#" style="margin-left:350px">Esqueceu a senha?</a>                       
         </div>       
         <div class="row" style="margin-top:10px">
-            <a href="../TelaCadastro/CadastroUser.aspx" style="margin-left:350px">Não possui uma conta?</a> 
+            <a href="#" style="margin-left:350px">Não possui uma conta?</a> 
         </div>
     </form>
 </body>

@@ -10,33 +10,33 @@
 namespace TccBancoTalentos {
     
     
-    public partial class Login {
+    public partial class VisualizarEmprego {
         
         /// <summary>
-        /// Controle txtEmail.
+        /// Controle droplistCidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.DropDownList droplistCidade;
         
         /// <summary>
-        /// Controle txtSenha.
+        /// Controle droplistEstado.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenha;
+        protected global::System.Web.UI.WebControls.DropDownList droplistEstado;
         
         /// <summary>
-        /// Controle btnLogin.
+        /// Controle grdEmpregos.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.GridView grdEmpregos;
     }
 }

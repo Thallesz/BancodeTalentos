@@ -1,5 +1,4 @@
-﻿<%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="TccBancoTalentos.Login" %>
-
+﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeBehind="LoginEmpresa.aspx.cs" Inherits="TccBancoTalentos.TelaLogin.LoginEmpresa" %>
 
 <!DOCTYPE html>
 
@@ -18,7 +17,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body style="background-image: url('../img/logincandidato.png');padding:50px">
+<body style="background-image: url('../img/fundoempresa.png');padding:50px">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>

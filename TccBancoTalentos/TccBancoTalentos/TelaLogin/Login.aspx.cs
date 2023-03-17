@@ -13,5 +13,27 @@ namespace TccBancoTalentos
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            var user = new Negocio.Usuario().Verifica_Usuario(txtEmail.Text, txtSenha.Text);
+
+            if (user !=null)
+            {
+                Session["email"] = user;
+                Response.Redirect("../TelaBusca/VisualizarEmprego.aspx");
+            }
+            else
+            {
+                SiteMaster.ExibirAlert(this, "Usuário e/ou senha incorretos!");
+            }
+                
+        }
+
+        protected void btnCad_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("~/TelaCadastro/CadastroUser.aspx");
+        }
     }
 }

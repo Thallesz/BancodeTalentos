@@ -9,9 +9,35 @@ namespace TccBancoTalentos
 {
     public partial class SiteMaster : MasterPage
     {
+        public static string ConnectionString = "Server=127.0.0.1;User ID=root;Password=;DataBase=bancotalentos";
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public static void ExibirAlert(Page page, string mensagem)
+        {
+            page.ClientScript.RegisterStartupScript(
+                 page.GetType(),
+                 "MessageBox" + Guid.NewGuid(),
+                 "<script language='javascript'>alert('" + mensagem + "');</script>"
+              );
+        }
+
+
+
+        public static void ExibirAlert(Page page, string mensagem, string pagina)
+        {
+            page.ClientScript.RegisterStartupScript(
+                 page.GetType(),
+                 "MessageBox" + Guid.NewGuid(),
+                 "<script language='javascript'>alert('" + mensagem + "');window.location = '" + pagina + "';</script>"
+              );
+        }
+
+        protected void btnCad_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/TelaCadastro/CadastroUser.aspx");
         }
     }
 }

@@ -1,0 +1,1 @@
+INSERT INTO vagasdisponiveis VALUES(NULL,"Progamador",1.300,"8:00","Desenvolvedor","Google");

@@ -7,10 +7,10 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace TccBancoTalentos {
+namespace TccBancoTalentos.TelaLogin {
     
     
-    public partial class Login {
+    public partial class LoginEmpresa {
         
         /// <summary>
         /// Controle txtEmail.

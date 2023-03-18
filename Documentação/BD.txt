@@ -33,9 +33,6 @@ CREATE TABLE vagasdisponiveis(
     cidade varchar(100),
     estado varchar(100)
 );
-
-
-
 CREATE TABLE `cidades` (
   `id` int(11) NOT NULL,
   `nome` varchar(120) DEFAULT NULL,

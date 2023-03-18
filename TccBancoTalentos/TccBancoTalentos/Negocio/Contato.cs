@@ -33,11 +33,9 @@ namespace TccBancoTalentos
             try
             {
                 smtpClient.Send(mailMessage);
-                Console.WriteLine("Email enviado!");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine("Não foi possível enviar o email: " + ex.Message);
             }
         }
     }

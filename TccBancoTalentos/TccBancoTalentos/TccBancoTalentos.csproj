@@ -198,6 +198,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="TelaLogin\LoginEmpresa.aspx" />
+    <Content Include="TelaSujestões\Sujestões.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="TelaBusca\VisualizarEmprego.aspx" />
     <Content Include="Web.config" />
@@ -285,6 +286,13 @@
     </Compile>
     <Compile Include="TelaLogin\LoginEmpresa.aspx.designer.cs">
       <DependentUpon>LoginEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelaSujestões\Sujestões.aspx.cs">
+      <DependentUpon>Sujestões.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelaSujestões\Sujestões.aspx.designer.cs">
+      <DependentUpon>Sujestões.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

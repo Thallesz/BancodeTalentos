@@ -164,6 +164,10 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="TelaBusca\VisualizarUsuários.aspx" />
+    <Content Include="TelaCadastro\CadastroUser.aspx" />
+    <Content Include="TelaCadastro\CadastroVaga.aspx" />
+    <Content Include="TelaLogin\Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="TelaBusca\VisualizarUsuários.aspx" />
@@ -224,6 +228,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Contato.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

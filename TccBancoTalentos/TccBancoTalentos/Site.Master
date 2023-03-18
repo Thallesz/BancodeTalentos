@@ -53,6 +53,7 @@
 
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaBusca/VisualizarEmprego.aspx">Vagas</a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaCadastro/CadastroVaga.aspx">Inserir Vaga</a></li>
+                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaSujestões/Sujestões.aspx">Contato</a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaBusca/VisualizarUsuários.aspx">Usuários</a></li>
                         <li>
                             <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button"

@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
 
-    <img src="../img/banner_vagas.png" class="img-fluid" style="background-repeat: no-repeat; width: 1583px; height: 350px" />
+    <img src="../img/banner_vagas.png" class="img-fluid" style="background-repeat: no-repeat; width: 1439px; height: 350px" />
     <br />
 
 </asp:Content>

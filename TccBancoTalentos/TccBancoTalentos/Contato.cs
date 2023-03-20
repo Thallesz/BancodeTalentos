@@ -10,7 +10,9 @@ namespace TccBancoTalentos
         {
             // Configure as credenciais do remetente do e-mail
             string remetente = "0000887027@senaimgaluno.com.br";
-            string destinatario = "0000886175@senaimgaluno.com.br";
+
+            string destinatario = "09113271@senaimgdocente.com.br";
+
             string senha = "Lraa12345";
 
             var smtpClient = new SmtpClient("smtp.gmail.com");
@@ -32,7 +34,7 @@ namespace TccBancoTalentos
             {
                 smtpClient.Send(mailMessage);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }

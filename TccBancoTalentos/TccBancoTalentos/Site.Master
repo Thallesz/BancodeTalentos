@@ -39,32 +39,44 @@
             </Scripts>
         </asp:ScriptManager>
 
+
         <div class="navbar navbar-fixed-top navbar-light" style="background-color: #2B4691">
             <div class="container">
                 <div class="navbar-header">
+
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+
                     </button>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaBusca/VisualizarEmprego.aspx">Vagas</a></li>
-                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaCadastro/CadastroVaga.aspx">Inserir Vaga</a></li>
+                        <li><a runat="server" style="font-size:35px;color:dodgerblue"> | </a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaSujestões/Sujestões.aspx">Contato</a></li>
+                        <li><a runat="server" style="font-size:35px;color:dodgerblue"> | </a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaBusca/VisualizarUsuários.aspx">Usuários</a></li>
+                        <li><a runat="server" style="font-size:35px;color:dodgerblue"> | </a></li>
                         <li>
                             <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false" style="font-size:17px;color:white">Entrar<span class="caret"></span></a>
+                                aria-haspopup="true" aria-expanded="false" style="font-size: 17px; color: white;margin-right:350px;margin-top:6px">Para Empresas<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="TelaLogin/Login.aspx" runat="server" style="color:black">Login do Candidato</a></li>
-                                <li><a href="TelaLogin/LoginEmpresa.aspx" runat="server" style="color:black">Login da Empresa</a></li>
+                                <li><a href="TelaCadastro/CadastroEmpresa.aspx" runat="server" style="color: black">Cadastre como Empresa</a></li>
+                                <li><a href="TelaCadastro/CadastroVaga.aspx" runat="server" style="color: black">Publicar Vaga</a></li>
                             </ul>
-                        </li>  
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false" style="font-size: 17px; color: white;margin-top:6px">Entrar<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="TelaLogin/Login.aspx" runat="server" style="color: black">Login do Candidato</a></li>
+                                <li><a href="TelaLogin/LoginEmpresa.aspx" runat="server" style="color: black">Login da Empresa</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                            <asp:Button ID="btnCad" runat="server" OnClick="btnCad_Click" Text="Cadastre-se" CssClass="btn btn-primary ml-auto" Style="font-size:17px;margin-top: 10px; border-radius: 0px; background-color: #64B8E9"></asp:Button>
+                            <asp:Button ID="btnCad" runat="server" OnClick="btnCad_Click" Text="Cadastre-se" CssClass="btn btn-primary ml-auto" Style="font-size: 17px; margin-top: 10px; border-radius: 0px; background-color: #64B8E9"></asp:Button>
                         </li>
                     </ul>
                 </div>

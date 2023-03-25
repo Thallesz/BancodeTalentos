@@ -1,4 +1,4 @@
-CREATE DATABASE bancotalentos;
+	CREATE DATABASE bancotalentos;
 USE BancoTalentos;
 CREATE TABLE gerente(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -20,6 +20,7 @@ CREATE TABLE empresa(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome varchar(200),
     cnpj varchar(14),
+    email varchar(100),
     senha varchar(50),
     cidade varchar(100),
     estado varchar(100)

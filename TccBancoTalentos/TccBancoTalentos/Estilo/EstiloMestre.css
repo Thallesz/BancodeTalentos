@@ -24,6 +24,10 @@
         transform: translateY(4px);
     }
 
+    .button:disabled{
+        background-color: #5c72b0;
+    }
+
 .buttonEmpregos {
     display: inline-block;
     font-size: 25px;
@@ -48,6 +52,59 @@
         background-color: #5918b7;
         transform: translateY(4px);
     }
+
+.dropdownlist {
+    width:332px;
+    height:35px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+    .dropdownlist::after {
+        content: "\25BC";
+        font-size: 12px;
+        color: #999;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+    }
+
+.dropdownlist-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+}
+
+    .dropdownlist-options li {
+        padding: 8px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        cursor: pointer;
+    }
+
+        .dropdownlist-options li:hover {
+            background-color: #f5f5f5;
+        }
 
 .box-title {
     color: aliceblue;
@@ -99,3 +156,8 @@
     .gridview-exemplo tr:nth-child(even) td {
         background-color: #fff;
     }
+
+.container-filtro {
+    display: grid;
+    height: 50vh;
+}

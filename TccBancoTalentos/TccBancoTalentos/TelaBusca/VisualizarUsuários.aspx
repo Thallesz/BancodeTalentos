@@ -17,7 +17,6 @@
                             <asp:BoundField DataField="estado" HeaderText="ESTADO" />
                             <asp:BoundField DataField="cidade" HeaderText="CIDADE" />
                             <asp:BoundField DataField="celular" HeaderText="CELULAR" />                           
-                            <asp:ButtonField ButtonType="Link" CommandName="editar" ControlStyle-CssClass="btn btn-primary" Text="Editar" />
                             <asp:ButtonField ButtonType="Link" CommandName="deletar" ControlStyle-CssClass="btn btn-primary" Text="Deletar" />
                         </Columns>
                     </asp:GridView>

@@ -116,5 +116,15 @@ namespace TccBancoTalentos
 
             connection.Close();
         }
+
+        protected void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

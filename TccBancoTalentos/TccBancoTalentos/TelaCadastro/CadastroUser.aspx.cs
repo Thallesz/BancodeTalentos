@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -55,8 +56,7 @@ namespace TccBancoTalentos.TelaCadastroUser
 
         protected void checkboxConcord_CheckedChanged(object sender, EventArgs e)
         {
-            
-            if (checkboxConcord.Checked == true)
+            if (checkboxConcord.Checked)
             {
                 btnCadUser.Enabled = true;
             }
@@ -108,11 +108,31 @@ namespace TccBancoTalentos.TelaCadastroUser
         {
             if (IsCpf(txtCPFUser.Text) == false)
             {
-                SiteMaster.ExibirAlert(this, "Dados Inválidos.");
-                return;
+                lblAlertaCpf.Text = "Insira um CPF válido";
+                lblAlertaCpf.ForeColor = Color.Red;
+                lblAlertaCpf.Visible = true;
             }
             else
             {
+
+                string Caminho = Server.MapPath("~/Curriculos") ;
+
+                if(oFile.HasFile)
+                {
+
+                    Caminho = Path.Combine(Caminho,oFile.FileName);
+
+                    oFile.SaveAs(Caminho);  
+
+                    lblConfirmCurriculo.Text = "Seu arquivo foi salvo como" + Caminho;
+                }
+                else
+                {
+                    lblConfirmCurriculo.Text = "Você não selecionou um arquivo.";
+                                         
+                }
+
+                
                 connection.Open();
                 var comando = new MySqlCommand($@"INSERT INTO candidato (nome,cpf,email,celular,estado,cidade,senha,datanasc) VALUES (@nome,@cpf,@email,@celular,@estado,@cidade,@senha,@datanasc)", connection);
 
@@ -156,5 +176,6 @@ namespace TccBancoTalentos.TelaCadastroUser
 
             connection.Close();
         }
+
     }
 }

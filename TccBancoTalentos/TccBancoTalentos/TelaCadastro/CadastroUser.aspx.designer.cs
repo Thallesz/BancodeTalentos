@@ -58,6 +58,24 @@ namespace TccBancoTalentos.TelaCadastroUser {
         protected global::System.Web.UI.WebControls.TextBox txtNasc;
         
         /// <summary>
+        /// Controle oFile.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload oFile;
+        
+        /// <summary>
+        /// Controle lblConfirmCurriculo.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConfirmCurriculo;
+        
+        /// <summary>
         /// Controle txtSenha.
         /// </summary>
         /// <remarks>

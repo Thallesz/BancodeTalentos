@@ -21,6 +21,7 @@ namespace TccBancoTalentos.TelaLogin
             if (user != null)
             {
                 Session["email"] = user;
+
                 Response.Redirect("../TelaCadastro/CadastroVaga.aspx");
             }
             else

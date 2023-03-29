@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeBehind="LoginEmpresa.aspx.cs" Inherits="TccBancoTalentos.TelaLogin.LoginEmpresa" %>
+﻿<%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="LoginEmpresa.aspx.cs" Inherits="TccBancoTalentos.TelaLogin.LoginEmpresa" %>
 
 <!DOCTYPE html>
 
@@ -53,17 +53,14 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="txtSenha" TextMode="Password" placeholder="Senha" Style="border-color: black; border-radius: 0px; border-color: #ced4da"></asp:TextBox>
                     <br />
                     <br />
-                    <asp:Button runat="server" CssClass="button" OnClick="btnLogin_Click" ID="btnLogin" Text="Entrar" Style="border-radius: 50px; margin-left: -1px" Font-Size="20px" Width="280px" Height="40px" />
+                    <asp:Button runat="server" CssClass="button" OnClick="btnLogin_Click" ID="btnLogin" Text="Entrar" Style="border-radius: 50px; margin-left: -1px" Font-Size="20px" Width="295px" Height="40px" />
                 </div>
             </div>
             <div class="col-sm-4">               
             </div>
-        </div>
-        <div class="row" style="margin-top:50px">
-            <a href="#" style="margin-left:350px">Esqueceu a senha?</a>                       
         </div>       
-        <div class="row" style="margin-top:10px">
-            <a href="#" style="margin-left:350px">Não possui uma conta?</a> 
+        <div class="row" style="margin-top:30px">
+            <a href="../TelaCadastro/CadastroEmpresa.aspx" style="margin-left:350px">Não possui uma conta?</a> 
         </div>
     </form>
 </body>

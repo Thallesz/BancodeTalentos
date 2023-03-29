@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CadastroEmpresa.aspx.cs" Inherits="TccBancoTalentos.TelaCadastro.CadastroEmpresa" %>
+﻿<%@ Page Title="Cadastro de Empresa" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CadastroEmpresa.aspx.cs" Inherits="TccBancoTalentos.TelaCadastro.CadastroEmpresa" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
     <img src="../img/cadastroempresa.png" class="img-fluid" style="background-repeat: no-repeat; width: 1583px; height: 350px" />

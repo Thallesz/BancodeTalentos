@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VisualizarUsuários.aspx.cs" Inherits="TccBancoTalentos.TelaBusca.VisualizarUsuários" %>
+﻿<%@ Page Title="Usuários" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VisualizarUsuários.aspx.cs" Inherits="TccBancoTalentos.TelaBusca.VisualizarUsuários" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent1" runat="server">
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />

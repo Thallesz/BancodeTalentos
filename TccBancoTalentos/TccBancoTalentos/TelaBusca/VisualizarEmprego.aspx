@@ -19,7 +19,9 @@
         <div style="border: none; border-color: black; padding: 30px; border-radius: 20px; background-color: #94d0f7; box-shadow: 5px 5px 10px">
             <div class="row">
                 <h2 style="font-size: 14px; color: black; cursor: default; font-family: Open Sans,sans-serif">Cargo</h2>
-                <asp:TextBox runat="server" ID="txtFiltroCargo" Text="Exemplo:Garçom" Style="border-color: #ced4da; padding: 6px 12px; height: 40px; width: 225px"></asp:TextBox>
+                <asp:TextBox runat="server" ID="txtFiltroCargo" placeholder="Exemplo:Garçom" Style="border-color: #ced4da; padding: 6px 12px; height: 40px; width: 225px"></asp:TextBox>
+                <h2 style="font-size: 14px; color: black; cursor: default">Profissão</h2>
+                <asp:DropDownList runat="server" ID="droplistProfissao" Style="padding: 6px 12px; height: 40px; width: 225px"></asp:DropDownList>
                 <h2 style="font-size: 14px; color: black; cursor: default">Estado</h2>
                 <asp:DropDownList runat="server" ID="droplistEstado" AutoPostBack="true" OnSelectedIndexChanged="droplistEstado_SelectedIndexChanged" Style="padding: 6px 12px; height: 40px; width: 225px">
                 </asp:DropDownList>
@@ -50,7 +52,7 @@
                             <asp:BoundField DataField="empresa" HeaderText="EMPRESA" />
                             <asp:BoundField DataField="estado" HeaderText="ESTADO" />
                             <asp:BoundField DataField="cidade" HeaderText="CIDADE" />
-                            <asp:ButtonField ButtonType="Link" CommandName="candidatar" ControlStyle-CssClass="btn btn-primary" Text="Candidatar" />
+                            <asp:ButtonField ButtonType="button" CommandName="visualizar" ControlStyle-CssClass="btn btn-xs btn-primary" Text="Visualizar" />
                         </Columns>
                     </asp:GridView>
                 </div>

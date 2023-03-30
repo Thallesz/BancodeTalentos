@@ -147,8 +147,8 @@
     .gridview-exemplo td {
         background-color: #ffffff;
         color: black;
-        padding: 1px;
-        border-width: 1px;
+        padding: 8px;
+        border-width: 2px;
         border-style: groove;
         border-color: #cccccc;
     }

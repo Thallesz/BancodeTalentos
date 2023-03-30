@@ -13,15 +13,6 @@ namespace TccBancoTalentos {
     public partial class SiteMaster {
         
         /// <summary>
-        /// Controle btnCad.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCad;
-        
-        /// <summary>
         /// Controle MainContent.
         /// </summary>
         /// <remarks>

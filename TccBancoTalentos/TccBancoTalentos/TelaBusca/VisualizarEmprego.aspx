@@ -44,7 +44,7 @@
             <div style="border: solid; border-color: black; padding: 30px; border-radius: 20px; background-color: #F8F9FA">
                 <div class="row">
 
-                    <asp:GridView runat="server" ID="grdEmpregos" OnRowCommand="grdEmpregos_RowCommand" AutoGenerateColumns="false" Width="100%" AllowPaging="true" PageSize="20" CssClass="gridview-exemplo" >
+                    <asp:GridView runat="server" ID="grdEmpregos" OnRowCommand="grdEmpregos_RowCommand" AutoGenerateColumns="false" Width="100%" AllowPaging="true" PageSize="20" CssClass="gridview-exemplo">
                         <Columns>
                             <asp:BoundField DataField="vaga" HeaderText="VAGA" />
                             <asp:BoundField DataField="salario" HeaderText="SALARIO" />

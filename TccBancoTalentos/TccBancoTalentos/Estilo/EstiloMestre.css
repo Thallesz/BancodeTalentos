@@ -1,0 +1,163 @@
+﻿.button {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    color: #fff;
+    background-color: #2B4691;
+    border: none;
+    padding: 5px;
+}
+
+    .button:hover {
+        background-color: rgb(15, 26, 155)
+    }
+
+    .button:active {
+        background-color: #2B4691;
+        box-shadow: 0 5px 5px rgb(56, 55, 55);
+        transform: translateY(4px);
+    }
+
+    .button:disabled{
+        background-color: #5c72b0;
+    }
+
+.buttonEmpregos {
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    color: aliceblue;
+    background-color: #5918b7;
+    border: none;
+    border-radius: 0px;
+}
+
+    .buttonEmpregos:hover {
+        background-color: #5918b7
+    }
+
+    .buttonEmpregos:active {
+        background-color: #5918b7;
+        transform: translateY(4px);
+    }
+
+.dropdownlist {
+    width:332px;
+    height:35px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+    .dropdownlist::after {
+        content: "\25BC";
+        font-size: 12px;
+        color: #999;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+    }
+
+.dropdownlist-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+}
+
+    .dropdownlist-options li {
+        padding: 8px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        cursor: pointer;
+    }
+
+        .dropdownlist-options li:hover {
+            background-color: #f5f5f5;
+        }
+
+.box-title {
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.content-box {
+    margin-top: 90px;
+    margin-left: 250px;
+    margin-right: 250px;
+    box-shadow: 10px 10px 20px #030303;
+    border-radius: 10px;
+}
+
+.container-principal {
+    display: grid;
+    height: 100vh;
+}
+
+.gridview-exemplo {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .gridview-exemplo th {
+        background-color: rgb(56, 55, 55);
+        color: #fff;
+        font-weight: bold;
+        text-align: left;
+        padding: 8px;
+    }
+
+    .gridview-exemplo td {
+        background-color: #ffffff;
+        color: black;
+        padding: 8px;
+        border-width: 2px;
+        border-style: groove;
+        border-color: #cccccc;
+    }
+
+    .gridview-exemplo tr:nth-child(even) td {
+        background-color: #fff;
+    }
+
+.container-filtro {
+    display: grid;
+    height: 50vh;
+}

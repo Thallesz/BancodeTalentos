@@ -31,7 +31,7 @@
                     <img src="../img/balão-de-fala.png" style="background-repeat: no-repeat; height: 80px" />
                     <h2 style="font-size: 20px; color: #2B4691">Chat</h2>
                     <h2 style="font-size: 16px; color: #2B4691">Deseja falar conosco agora?</h2>
-                    <a href="https://api.whatsapp.com/send?phone=553599347513&text=Ol%C3%A1$20tudo%20bem?" target="_blank">Mande mensagem agora mesmo</a>
+                    <a href="https://api.whatsapp.com/send?phone=553599347513&text=" target="_blank">Mande mensagem agora mesmo</a>
                 </div>
             </div>
         </div>

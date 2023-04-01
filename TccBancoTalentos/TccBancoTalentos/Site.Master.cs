@@ -9,7 +9,7 @@ namespace TccBancoTalentos
 {
     public partial class SiteMaster : MasterPage
     {
-        public static string ConnectionString = "Server=127.0.0.1;User ID=root;Password=;DataBase=bancotalentos";
+        public static string ConnectionString = "Server=mysql8003.site4now.net;User ID=a97033_talento;Password=talento2023;DataBase=db_a97033_talento";
         protected void Page_Load(object sender, EventArgs e)
         {
 

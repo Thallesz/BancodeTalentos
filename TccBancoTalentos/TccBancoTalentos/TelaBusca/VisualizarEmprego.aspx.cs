@@ -20,7 +20,22 @@ namespace TccBancoTalentos
 
             if (!IsPostBack)
             {
+                connection.Open();
+                droplistProfissao.Items.Clear();
+
+                var reader3 = new MySqlCommand("SELECT id,vaga FROM vagasdisponiveis", connection).ExecuteReader();
+
+                droplistProfissao.Items.Add("");
+
+                while (reader3.Read())
+                {
+                    var profissao = new ListItem(reader3.GetString("vaga"), Convert.ToString(reader3.GetInt32("id")));
+                    droplistProfissao.Items.Add(profissao);
+                }
+
+                connection.Close();
             }
+
             connection.Open();
 
             droplistEstado.Items.Clear();
@@ -52,23 +67,6 @@ namespace TccBancoTalentos
             }
 
             connection.Close();
-
-            connection.Open();
-
-            droplistProfissao.Items.Clear();
-
-            var reader3 = new MySqlCommand("SELECT id,vaga FROM vagasdisponiveis", connection).ExecuteReader();
-
-            droplistProfissao.Items.Add("");
-
-            while (reader3.Read())
-            {
-                var profissao = new ListItem(reader3.GetString("vaga"), Convert.ToString(reader3.GetInt32("id")));
-                droplistProfissao.Items.Add(profissao);
-            }
-
-            connection.Close();
-
 
             DataTable empregos = new DataTable();
 
@@ -165,21 +163,27 @@ namespace TccBancoTalentos
 
             if (txtFiltroCargo.Text.Equals("") == false)
             {
-                comando2.CommandText += $"AND vaga like @vaga";
+                comando2.CommandText += $" AND vaga like @vaga";
                 comando2.Parameters.Add(new MySqlParameter("vaga", $"%{txtFiltroCargo.Text}%"));
-            }           
+            }
 
-            if(droplistProfissao.SelectedIndex > 0)
+            if (droplistProfissao.SelectedIndex > 0)
             {
-                comando2.CommandText += $"AND vaga like @vaga";
-                comando2.Parameters.Add(new MySqlParameter("vaga", $"%{droplistProfissao.SelectedItem.Text}%"));
+                comando2.CommandText += $" AND vaga = @vaga";
+                comando2.Parameters.Add(new MySqlParameter("vaga", droplistProfissao.SelectedItem.Text));
 
             }
 
-            if(droplistCidade.SelectedIndex > 0)
+            if (droplistCidade.SelectedIndex > 0)
             {
-                comando2.CommandText += $"AND cidade like @cidade";
-                comando2.Parameters.Add(new MySqlParameter("cidade", $"%{droplistCidade.SelectedItem.Text}%"));
+                comando2.CommandText += $" AND cidade = @cidade";
+                comando2.Parameters.Add(new MySqlParameter("cidade", droplistCidade.SelectedItem.Text));
+            }
+
+            if (droplistEstado.SelectedIndex > 0)
+            {
+                comando2.CommandText += $" AND estado @estado";
+                comando2.Parameters.Add(new MySqlParameter("estado", $"%{droplistEstado.SelectedItem.Text}%"));
             }
 
             var reader3 = comando2.ExecuteReader();

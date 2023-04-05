@@ -52,7 +52,7 @@
                             <asp:BoundField DataField="empresa" HeaderText="EMPRESA" />
                             <asp:BoundField DataField="estado" HeaderText="ESTADO" />
                             <asp:BoundField DataField="cidade" HeaderText="CIDADE" />
-                            <asp:ButtonField ButtonType="button" CommandName="visualizar" ControlStyle-CssClass="btn btn-xs btn-primary" Text="Visualizar"/>
+                            <asp:ButtonField ButtonType="button" CommandName="cadastrar" ControlStyle-CssClass="btn btn-xs btn-primary" Text="CADASTRAR"/>
                         </Columns>
                     </asp:GridView>
                 </div>

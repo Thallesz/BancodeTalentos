@@ -108,9 +108,9 @@ namespace TccBancoTalentos
 
             int index = Convert.ToInt32(e.CommandArgument);
             var emprego = (DataTable)Session["tabela"];
-            if (e.CommandName == "visualizar")
+            if (e.CommandName == "cadastrar")
             {
-
+                Response.Redirect("../TelaCadastro/CadastroUser.aspx");
             }
         }
 

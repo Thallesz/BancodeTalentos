@@ -162,7 +162,19 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="img\banner_vagas.png" />
+    <Content Include="img\cadastroempresa.png" />
+    <Content Include="img\empresa1.jpg" />
+    <Content Include="img\fundoempresa.png" />
+    <Content Include="img\imagemtelefone.jpg" />
+    <Content Include="img\imginicio.jpg" />
+    <Content Include="img\imgtopoinicio.jpg" />
+    <Content Include="img\imgtopoinicio1.jpg" />
+    <Content Include="img\telefone.png" />
+    <Content Include="img\transferir.png" />
     <Content Include="TelaBusca\TelaInicial.aspx" />
     <Content Include="TelaBusca\VisualizarUsuários.aspx" />
     <Content Include="TelaCadastro\CadastroEmpresa.aspx" />
@@ -333,7 +345,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Data\" />
-    <Folder Include="img\" />
     <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>

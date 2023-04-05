@@ -53,6 +53,8 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaBusca/TelaInicial.aspx">Tela Inicial</a></li>
+                        <li><a runat="server" style="font-size: 35px; color: dodgerblue">| </a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaBusca/VisualizarEmprego.aspx">Vagas</a></li>
                         <li><a runat="server" style="font-size: 35px; color: dodgerblue">| </a></li>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaSujestões/Sujestões.aspx">Contato</a></li>
@@ -61,7 +63,7 @@
                         <li><a runat="server" style="font-size: 35px; color: dodgerblue" >| </a></li>
                         <li>
                             <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false" style="font-size: 17px; color: white; margin-right: 350px; margin-top: 6px">Para Empresas<span class="caret"></span></a>
+                                aria-haspopup="true" aria-expanded="false" style="font-size: 17px; color: white; margin-right: 200px; margin-top: 6px">Para Empresas<span class="caret"></span></a>
 
                             <ul class="dropdown-menu">
 
@@ -71,13 +73,8 @@
                         </li>
                         <%} %>
                         <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaLogin/LoginEmpresa.aspx">Login da Empresa</a></li>
-                        <li><a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button"
-                            aria-haspopup="true" aria-expanded="false" style="font-size: 17px; color: white; margin-top: 6px">Cadastre-se<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="TelaCadastro/CadastroEmpresa.aspx" runat="server" style="color: black">Cadastre como Empresa</a></li>
-                                <li><a href="TelaCadastro/CadastroUser.aspx" runat="server" style="color: black">Cadastre como Candidato</a></li>
-                            </ul>
-                        </li>
+                        <li><a runat="server" style="font-size: 35px; color: dodgerblue">| </a></li>
+                        <li><a runat="server" style="color: white; font-family: 'Lucida Sans Unicode'; margin-top: 5px; font-size: 17px" href="TelaCadastro/CadastroEmpresa.aspx">Cadastrar</a></li>
                     </ul>
                 </div>
             </div>

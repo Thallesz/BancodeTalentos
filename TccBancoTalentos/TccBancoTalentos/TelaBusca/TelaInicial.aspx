@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TelaInicial.aspx.cs" Inherits="TccBancoTalentos.TelaBusca.TelaInicial" %>
+﻿<%@ Page Title="Tela Inicial" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TelaInicial.aspx.cs" Inherits="TccBancoTalentos.TelaBusca.TelaInicial" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" href="../Estilo/EstiloMestre.css" />
@@ -24,7 +24,8 @@
                 
             </div>
             <h2 style="font-size: 22px; color: #2B4691; margin-top: 50px;margin-left:350px">Ache um emprego na sua área.</h2>
-            <asp:Button runat="server" CssClass="button" ID="btnIrVaga" Text="QUERO VER TODAS AS VAGAS" style="border-radius:20px;width:350px;margin-left:330px" />
+
+            <asp:Button runat="server" CssClass="button" OnClick="btnIrVaga_Click" ID="btnIrVaga" Text="QUERO VER TODAS AS VAGAS" style="border-radius:20px;width:350px;margin-left:330px" />
         </div>
     </div>
 </asp:Content>

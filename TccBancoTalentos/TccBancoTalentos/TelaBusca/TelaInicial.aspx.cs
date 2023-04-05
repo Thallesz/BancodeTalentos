@@ -11,7 +11,12 @@ namespace TccBancoTalentos.TelaBusca
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void btnIrVaga_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../TelaBusca/VisualizarEmprego.aspx");
         }
     }
 }

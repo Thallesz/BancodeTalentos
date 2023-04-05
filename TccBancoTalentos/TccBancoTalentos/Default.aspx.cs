@@ -11,7 +11,7 @@ namespace TccBancoTalentos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Redirect("/TelaBusca/TelaInicial.aspx");
+            Response.Redirect("TelaBusca/TelaInicial.aspx");
             
         }
     }
